@@ -28,9 +28,11 @@
     <ClInclude Include="Color.h" />
     <ClInclude Include="ColorInversionDecorator.h" />
     <ClInclude Include="Failure.h" />
+    <ClInclude Include="GrayScaleConversionDecorator.h" />
     <ClInclude Include="IBitmapDecoder.h" />
     <ClInclude Include="IBitmapEncoder.h" />
     <ClInclude Include="IBitmapIterator.h" />
+    <ClInclude Include="PosterizeDecorator.h" />
     <ClInclude Include="ranged_number.h" />
     <ClInclude Include="SizedWord.h" />
     <ClInclude Include="Test.h" />

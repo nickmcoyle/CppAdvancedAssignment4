@@ -95,6 +95,12 @@ namespace Binary
 		bool operator==(const SizedWord& rhs) const noexcept { return myData == rhs.myData; }
 		bool operator!=(const SizedWord& rhs) const noexcept { return !(operator==(rhs)); }
 
+		const Byte& operator+ (const SizedWord& rhs) { return this->myData + rhs->myData; }
+		const Byte& operator- (const SizedWord& rhs) { return this->myData - rhs->myData; }		
+
+		const Byte& operator> (const int rhs) const { return this->myData > rhs; }
+		const Byte& operator< (const int rhs) const { return this->myData < rhs; }
+
 		explicit operator WordSize() const { return myData; }
 
 		friend std::ostream& operator<<(std::ostream& os, const SizedWord& word)
