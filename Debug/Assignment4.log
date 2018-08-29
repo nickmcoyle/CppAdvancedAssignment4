@@ -1,0 +1,272 @@
+﻿  Bitmap.cpp
+  BitmapEncodeDecodeTests.cpp
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(12): error C3646: 'clone': unknown override specifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(12): error C2059: syntax error: ')'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(12): error C2238: unexpected token(s) preceding ';'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(13): error C3646: 'createIterator': unknown override specifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(13): error C2059: syntax error: ')'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(13): error C2238: unexpected token(s) preceding ';'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(31): error C3646: 'clone': unknown override specifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(31): error C2059: syntax error: '('
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(31): error C2238: unexpected token(s) preceding ';'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(32): error C3646: 'createIterator': unknown override specifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(32): error C2059: syntax error: '('
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(32): error C2238: unexpected token(s) preceding ';'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(37): error C3646: 'myBitmap': unknown override specifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(37): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(38): warning C4624: 'WindowsBitmapDecoder': destructor was implicitly defined as deleted
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(29): error C2282: 'WindowsBitmapDecoder::~WindowsBitmapDecoder' cannot override 'IBitmapDecoder::~IBitmapDecoder'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(10): note: 'IBitmapDecoder::~IBitmapDecoder' is not deleted
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(11): error C3646: 'clone': unknown override specifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(11): error C2059: syntax error: ')'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(11): error C2238: unexpected token(s) preceding ';'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(29): error C3646: 'clone': unknown override specifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(29): error C2059: syntax error: '('
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(29): error C2238: unexpected token(s) preceding ';'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(34): error C3646: 'myBitmapIterator': unknown override specifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(34): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(35): warning C4624: 'WindowsBitmapEncoder': destructor was implicitly defined as deleted
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(27): error C2282: 'WindowsBitmapEncoder::~WindowsBitmapEncoder' cannot override 'IBitmapEncoder::~IBitmapEncoder'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(9): note: 'IBitmapEncoder::~IBitmapEncoder' is not deleted
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(17): error C2065: 'HBitmapDecoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(17): error C2146: syntax error: missing ';' before identifier 'decoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(17): error C2065: 'decoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(17): error C2039: 'clone': is not a member of 'WindowsBitmapDecoder'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(19): note: see declaration of 'WindowsBitmapDecoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(18): error C2065: 'decoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(18): error C2227: left of '->getMimeType' must point to class/struct/union/generic type
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(18): note: type is 'unknown-type'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(18): error C2661: 'check_equal_compare': no overloaded function takes 4 arguments
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(27): error C2065: 'HBitmapDecoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(27): error C2146: syntax error: missing ';' before identifier 'decoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(27): error C2065: 'decoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(27): error C2039: 'clone': is not a member of 'WindowsBitmapDecoder'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(19): note: see declaration of 'WindowsBitmapDecoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(28): error C2065: 'decoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(28): error C2227: left of '->createIterator' must point to class/struct/union/generic type
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(28): note: type is 'unknown-type'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(40): error C2065: 'HBitmapDecoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(40): error C2146: syntax error: missing ';' before identifier 'decoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(40): error C2065: 'decoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(40): error C2039: 'clone': is not a member of 'WindowsBitmapDecoder'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(19): note: see declaration of 'WindowsBitmapDecoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(41): error C2065: 'decoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(41): error C2227: left of '->createIterator' must point to class/struct/union/generic type
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(41): note: type is 'unknown-type'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(68): error C2065: 'HBitmapDecoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(68): error C2146: syntax error: missing ';' before identifier 'decoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(68): error C2065: 'decoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(68): error C2039: 'clone': is not a member of 'WindowsBitmapDecoder'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(19): note: see declaration of 'WindowsBitmapDecoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(69): error C2065: 'decoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(69): error C2227: left of '->createIterator' must point to class/struct/union/generic type
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(69): note: type is 'unknown-type'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(77): error C2065: 'HBitmapEncoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(77): error C2146: syntax error: missing ';' before identifier 'encoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(77): error C2065: 'encoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(77): error C2039: 'clone': is not a member of 'WindowsBitmapEncoder'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(17): note: see declaration of 'WindowsBitmapEncoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(79): error C2065: 'encoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(79): error C2227: left of '->encodeToStream' must point to class/struct/union/generic type
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(79): note: type is 'unknown-type'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(87): error C2065: 'HBitmapDecoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(87): error C2146: syntax error: missing ';' before identifier 'decoder2'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(87): error C2065: 'decoder2': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(87): error C2039: 'clone': is not a member of 'WindowsBitmapDecoder'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(19): note: see declaration of 'WindowsBitmapDecoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(88): error C2065: 'decoder2': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(88): error C2227: left of '->createIterator' must point to class/struct/union/generic type
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(88): note: type is 'unknown-type'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(116): error C2065: 'HBitmapDecoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(116): error C2146: syntax error: missing ';' before identifier 'decoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(116): error C2065: 'decoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(116): error C2039: 'clone': is not a member of 'WindowsBitmapDecoder'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(19): note: see declaration of 'WindowsBitmapDecoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(117): error C2065: 'decoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(117): error C2227: left of '->createIterator' must point to class/struct/union/generic type
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(117): note: type is 'unknown-type'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(129): error C2065: 'HBitmapDecoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(129): error C2146: syntax error: missing ';' before identifier 'decoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(129): error C2065: 'decoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(129): error C2039: 'clone': is not a member of 'WindowsBitmapDecoder'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(19): note: see declaration of 'WindowsBitmapDecoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(130): error C2065: 'decoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(130): error C2227: left of '->createIterator' must point to class/struct/union/generic type
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(130): note: type is 'unknown-type'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(157): error C2065: 'HBitmapDecoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(157): error C2146: syntax error: missing ';' before identifier 'decoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(157): error C2065: 'decoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(157): error C2039: 'clone': is not a member of 'WindowsBitmapDecoder'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(19): note: see declaration of 'WindowsBitmapDecoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(158): error C2065: 'decoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(158): error C2227: left of '->createIterator' must point to class/struct/union/generic type
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(158): note: type is 'unknown-type'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(166): error C2065: 'HBitmapEncoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(166): error C2146: syntax error: missing ';' before identifier 'encoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(166): error C2065: 'encoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(166): error C2039: 'clone': is not a member of 'WindowsBitmapEncoder'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(17): note: see declaration of 'WindowsBitmapEncoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(168): error C2065: 'encoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(168): error C2227: left of '->encodeToStream' must point to class/struct/union/generic type
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(168): note: type is 'unknown-type'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(176): error C2065: 'HBitmapDecoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(176): error C2146: syntax error: missing ';' before identifier 'decoder2'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(176): error C2065: 'decoder2': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(176): error C2039: 'clone': is not a member of 'WindowsBitmapDecoder'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(19): note: see declaration of 'WindowsBitmapDecoder'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(177): error C2065: 'decoder2': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(177): error C2227: left of '->createIterator' must point to class/struct/union/generic type
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapencodedecodetests.cpp(177): note: type is 'unknown-type'
+  BitmapIterator.cpp
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(30): error C2065: 'Bitmap': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(30): error C2227: left of '->myWidth' must point to class/struct/union/generic type
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(30): note: type is 'unknown-type'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(35): error C2065: 'Bitmap': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(35): error C2227: left of '->myHeight' must point to class/struct/union/generic type
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(35): note: type is 'unknown-type'
+  CodecLibraryTest.cpp
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(11): error C3646: 'clone': unknown override specifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(11): error C2059: syntax error: ')'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(11): error C2238: unexpected token(s) preceding ';'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(29): error C3646: 'clone': unknown override specifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(29): error C2059: syntax error: '('
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(29): error C2238: unexpected token(s) preceding ';'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(34): error C3646: 'myBitmapIterator': unknown override specifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(34): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(35): warning C4624: 'WindowsBitmapEncoder': destructor was implicitly defined as deleted
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(27): error C2282: 'WindowsBitmapEncoder::~WindowsBitmapEncoder' cannot override 'IBitmapEncoder::~IBitmapEncoder'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapencoder.h(9): note: 'IBitmapEncoder::~IBitmapEncoder' is not deleted
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrary.h(10): error C2065: 'Bitmapencoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrary.h(10): error C2923: 'std::shared_ptr': 'Bitmapencoder' is not a valid template type argument for parameter '_Ty'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrary.h(11): error C2923: 'std::shared_ptr': 'Bitmapencoder' is not a valid template type argument for parameter '_Ty'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrary.h(11): error C2143: syntax error: missing ';' before 'using'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrary.h(11): error C2065: 'Bitmapdecoder': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrary.h(11): error C2923: 'std::shared_ptr': 'Bitmapdecoder' is not a valid template type argument for parameter '_Ty'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrary.h(12): error C2923: 'std::shared_ptr': 'Bitmapdecoder' is not a valid template type argument for parameter '_Ty'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrary.h(12): error C2059: syntax error: 'public'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrary.h(12): error C2143: syntax error: missing ';' before ':'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrary.h(12): error C2059: syntax error: ':'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrary.h(12): error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\brightnessdecorator.h(7): error C2059: syntax error: 'namespace'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\brightnessdecorator.h(8): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(13): error C3646: 'createIterator': unknown override specifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(13): error C2059: syntax error: ')'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(13): error C2238: unexpected token(s) preceding ';'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(32): error C3646: 'createIterator': unknown override specifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(32): error C2059: syntax error: '('
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(32): error C2238: unexpected token(s) preceding ';'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(37): error C3646: 'myBitmap': unknown override specifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(37): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(38): warning C4624: 'CodecLibrary::WindowsBitmapDecoder': destructor was implicitly defined as deleted
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(29): error C2282: 'CodecLibrary::WindowsBitmapDecoder::~WindowsBitmapDecoder' cannot override 'CodecLibrary::IBitmapDecoder::~IBitmapDecoder'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\windowsbitmapdecoder.h(10): note: 'CodecLibrary::IBitmapDecoder::~IBitmapDecoder' is not deleted
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\fstream(14): error C2059: syntax error: 'namespace'
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\fstream(14): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(12): error C2059: syntax error: 'using namespace'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(12): error C2238: unexpected token(s) preceding ';'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(14): error C2059: syntax error: 'namespace'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(15): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(34): error C3254: 'CodecLibrary': class contains explicit override 'runTest' but does not derive from an interface that contains the function declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(34): error C2838: 'runTest': illegal qualified name in member declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(50): error C3254: 'CodecLibrary': class contains explicit override 'runTest' but does not derive from an interface that contains the function declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(50): error C2838: 'runTest': illegal qualified name in member declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(50): error C2535: 'void CodecLibrary::runTest(TestResult &)': member function already defined or declared
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(33): note: see declaration of 'CodecLibrary::runTest'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(66): error C3254: 'CodecLibrary': class contains explicit override 'runTest' but does not derive from an interface that contains the function declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(66): error C2838: 'runTest': illegal qualified name in member declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(66): error C2535: 'void CodecLibrary::runTest(TestResult &)': member function already defined or declared
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(33): note: see declaration of 'CodecLibrary::runTest'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(79): error C3254: 'CodecLibrary': class contains explicit override 'runTest' but does not derive from an interface that contains the function declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(79): error C2838: 'runTest': illegal qualified name in member declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(79): error C2535: 'void CodecLibrary::runTest(TestResult &)': member function already defined or declared
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(33): note: see declaration of 'CodecLibrary::runTest'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(100): error C3254: 'CodecLibrary': class contains explicit override 'runTest' but does not derive from an interface that contains the function declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(100): error C2838: 'runTest': illegal qualified name in member declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(100): error C2535: 'void CodecLibrary::runTest(TestResult &)': member function already defined or declared
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(33): note: see declaration of 'CodecLibrary::runTest'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(112): error C3254: 'CodecLibrary': class contains explicit override 'runTest' but does not derive from an interface that contains the function declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(112): error C2838: 'runTest': illegal qualified name in member declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(112): error C2535: 'void CodecLibrary::runTest(TestResult &)': member function already defined or declared
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(33): note: see declaration of 'CodecLibrary::runTest'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(132): error C3254: 'CodecLibrary': class contains explicit override 'runTest' but does not derive from an interface that contains the function declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(132): error C2838: 'runTest': illegal qualified name in member declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(132): error C2535: 'void CodecLibrary::runTest(TestResult &)': member function already defined or declared
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(33): note: see declaration of 'CodecLibrary::runTest'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(146): error C3254: 'CodecLibrary': class contains explicit override 'runTest' but does not derive from an interface that contains the function declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(146): error C2838: 'runTest': illegal qualified name in member declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(146): error C2535: 'void CodecLibrary::runTest(TestResult &)': member function already defined or declared
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(33): note: see declaration of 'CodecLibrary::runTest'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(169): error C3254: 'CodecLibrary': class contains explicit override 'runTest' but does not derive from an interface that contains the function declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(169): error C2838: 'runTest': illegal qualified name in member declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(169): error C2535: 'void CodecLibrary::runTest(TestResult &)': member function already defined or declared
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(33): note: see declaration of 'CodecLibrary::runTest'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(193): error C3254: 'CodecLibrary': class contains explicit override 'runTest' but does not derive from an interface that contains the function declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(193): error C2838: 'runTest': illegal qualified name in member declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(193): error C2535: 'void CodecLibrary::runTest(TestResult &)': member function already defined or declared
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(33): note: see declaration of 'CodecLibrary::runTest'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(217): error C3254: 'CodecLibrary': class contains explicit override 'runTest' but does not derive from an interface that contains the function declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(217): error C2838: 'runTest': illegal qualified name in member declaration
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(217): error C2535: 'void CodecLibrary::runTest(TestResult &)': member function already defined or declared
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(33): note: see declaration of 'CodecLibrary::runTest'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(241): fatal error C1004: unexpected end-of-file found
+  Color.cpp
+  Failure.cpp
+  main.cpp
+  ranged_numberTest.cpp
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(9): error C2679: binary '=': no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_number.h(14): note: could be 'ranged_number<short,1,12> &ranged_number<short,1,12>::operator =(ranged_number<short,1,12> &&)'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_number.h(14): note: or       'ranged_number<short,1,12> &ranged_number<short,1,12>::operator =(const ranged_number<short,1,12> &)'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(9): note: while trying to match the argument list '(ranged_number<short,1,12>, int)'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(17): error C2679: binary '=': no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_number.h(14): note: could be 'ranged_number<short,1,12> &ranged_number<short,1,12>::operator =(ranged_number<short,1,12> &&)'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_number.h(14): note: or       'ranged_number<short,1,12> &ranged_number<short,1,12>::operator =(const ranged_number<short,1,12> &)'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(17): note: while trying to match the argument list '(ranged_number<short,1,12>, int)'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(20): error C2675: unary '++': 'ranged_number<short,1,12>' does not define this operator or a conversion to a type acceptable to the predefined operator
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(28): error C2679: binary '=': no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_number.h(14): note: could be 'ranged_number<short,1,12> &ranged_number<short,1,12>::operator =(ranged_number<short,1,12> &&)'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_number.h(14): note: or       'ranged_number<short,1,12> &ranged_number<short,1,12>::operator =(const ranged_number<short,1,12> &)'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(28): note: while trying to match the argument list '(ranged_number<short,1,12>, int)'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(31): error C2675: unary '++': 'ranged_number<short,1,12>' does not define this operator or a conversion to a type acceptable to the predefined operator
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(39): error C2679: binary '=': no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_number.h(14): note: could be 'ranged_number<short,1,12> &ranged_number<short,1,12>::operator =(ranged_number<short,1,12> &&)'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_number.h(14): note: or       'ranged_number<short,1,12> &ranged_number<short,1,12>::operator =(const ranged_number<short,1,12> &)'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(39): note: while trying to match the argument list '(ranged_number<short,1,12>, int)'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(42): error C2676: binary '++': 'ranged_number<short,1,12>' does not define this operator or a conversion to a type acceptable to the predefined operator
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(50): error C2679: binary '=': no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_number.h(14): note: could be 'ranged_number<short,1,12> &ranged_number<short,1,12>::operator =(ranged_number<short,1,12> &&)'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_number.h(14): note: or       'ranged_number<short,1,12> &ranged_number<short,1,12>::operator =(const ranged_number<short,1,12> &)'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(50): note: while trying to match the argument list '(ranged_number<short,1,12>, int)'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(53): error C2675: unary '--': 'ranged_number<short,1,12>' does not define this operator or a conversion to a type acceptable to the predefined operator
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(61): error C2679: binary '=': no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_number.h(14): note: could be 'ranged_number<short,1,12> &ranged_number<short,1,12>::operator =(ranged_number<short,1,12> &&)'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_number.h(14): note: or       'ranged_number<short,1,12> &ranged_number<short,1,12>::operator =(const ranged_number<short,1,12> &)'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(61): note: while trying to match the argument list '(ranged_number<short,1,12>, int)'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(64): error C2676: binary '--': 'ranged_number<short,1,12>' does not define this operator or a conversion to a type acceptable to the predefined operator
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(71): error C2440: 'initializing': cannot convert from 'initializer list' to 'ranged_number<int,1,12>'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(71): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(73): error C2440: 'initializing': cannot convert from 'initializer list' to 'Grade'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(73): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(76): error C2440: 'initializing': cannot convert from 'initializer list' to 'Grade'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(76): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(82): error C2440: 'initializing': cannot convert from 'initializer list' to 'ranged_number<int,1,12>'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(82): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(84): error C2676: binary '+=': 'Grade' does not define this operator or a conversion to a type acceptable to the predefined operator
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(87): error C2676: binary '+=': 'Grade' does not define this operator or a conversion to a type acceptable to the predefined operator
+  Test.cpp
+  TestRegistry.cpp
+  TestResult.cpp
+  VerifyEqualityTest.cpp
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\verifyequalitytest.cpp(11): error C2653: 'Binary': is not a class or namespace name
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\verifyequalitytest.cpp(11): error C2065: 'Word': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\verifyequalitytest.cpp(11): error C2146: syntax error: missing ';' before identifier 'actual'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\verifyequalitytest.cpp(11): error C2065: 'actual': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\verifyequalitytest.cpp(11): error C3861: 'readLittleEndian': identifier not found
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\verifyequalitytest.cpp(12): error C2653: 'Binary': is not a class or namespace name
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\verifyequalitytest.cpp(12): error C2065: 'Word': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\verifyequalitytest.cpp(12): error C2146: syntax error: missing ';' before identifier 'notReallyExpected'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\verifyequalitytest.cpp(12): error C2065: 'notReallyExpected': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\verifyequalitytest.cpp(16): error C2065: 'notReallyExpected': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\verifyequalitytest.cpp(16): error C2065: 'actual': undeclared identifier
+  WindowsBitmapHeader.cpp
+  WindowsBitmapHeaderTest.cpp
+  Generating Code...
