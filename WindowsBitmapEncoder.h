@@ -21,12 +21,13 @@ namespace BitmapGraphics
 		~WindowsBitmapEncoder();
 
 		HBitmapEncoder clone(const HBitmapIterator& bitmapIterator);
-		std::ostream encodeToStream(HBitmapIterator); //encoder is created with an iterator and produces/encodes to a stream
+		std::ostream encodeToStream(HBitmapIterator& bitmapIter); //encoder is created with an iterator and produces/encodes to a stream
 		std::string getMimeType();
 
 	private:
 		BitmapIterator myBitmapIterator;
 		const std::string mimeType{ "image/x-ms-bmp" };
 		static const Binary::DoubleWord alignmentValue;
+		HBitmapEncoder myEncoder;
 	};
 }

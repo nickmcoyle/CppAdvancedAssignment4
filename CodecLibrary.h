@@ -13,22 +13,32 @@ namespace BitmapGraphics
 
 	class CodecLibrary
 	{
-	private:
-		using BitmapEncoderCollection = std::list<HBitmapEncoder>;
-		using BitmapDecoderCollection = std::list<HBitmapDecoder>;
-
 	public:
 		static CodecLibrary& getInstance();
 
+	private:
+		using BitmapEncoderCollection = std::list<HBitmapEncoder>;
+		using BitmapDecoderCollection = std::list<HBitmapDecoder>;		
+
+		
+		CodecLibrary() = default; //private constructor prevents instantiation outside of this class
+		~CodecLibrary() = default;
+		
+		CodecLibrary(const CodecLibrary&) = delete; //prevent copy constructor
+		CodecLibrary& operator= (const CodecLibrary) = delete; //prevent copy assignment
+		CodecLibrary(CodecLibrary&&) = delete; //prevent move constructor
+		CodecLibrary& operator=(CodecLibrary&&) = delete; //prevent move assignment
+		
+	public:
 		void registerEncoder(HBitmapEncoder const& encoder);
 		void registerDecoder(HBitmapDecoder const& decoder);
 
 		// provide a mime type version and an
 		// auto determination version of createDecoder
-		static HBitmapDecoder createDecoder(std::istream& sourceStream);
-		static HBitmapDecoder createDecoder(std::string const& mimeType, std::istream& sourceStream);
+		HBitmapDecoder createDecoder(std::istream& sourceStream);
+		HBitmapDecoder createDecoder(std::string const& mimeType, std::istream& sourceStream);
 
-		static HBitmapEncoder createEncoder(std::string const& mimeType, HBitmapIterator const& bitmapIterator);
+		HBitmapEncoder createEncoder(std::string const& mimeType, HBitmapIterator const& bitmapIterator);
 
 	private:
 		BitmapDecoderCollection myDecoders;

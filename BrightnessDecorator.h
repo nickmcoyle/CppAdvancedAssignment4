@@ -1,4 +1,5 @@
 #pragma once
+
 #include "BitmapIteratorDecorator.h"
 #include "Bitmap.h"
 #include "ranged_number.h"
@@ -40,10 +41,11 @@ namespace BitmapGraphics
 
 		Color getColor() const {
 			Color const oldColor = originalIterator->getColor();
+			ColorComponent const red = ColorComponent(1) + ColorComponent(brightnessAdjustment);
 
-			ColorComponent const red = oldColor.getRed() + brightnessAdjustment;
-			ColorComponent const green = oldColor.getGreen() +	brightnessAdjustment;
-			ColorComponent const blue = oldColor.getBlue() + brightnessAdjustment;
+			Color const red = ColorComponent(static_cast<int>(oldColor.getRed())) + ColorComponent(brightnessAdjustment);
+			Color const green = oldColor.getGreen() +	brightnessAdjustment;
+			Color const blue = oldColor.getBlue() + brightnessAdjustment;
 
 			return Color(red, green, blue);
 		}

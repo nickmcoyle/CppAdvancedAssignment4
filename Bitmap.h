@@ -22,7 +22,8 @@ namespace BitmapGraphics
 		Bitmap() = delete;
 		// Construct Bitmap from current location in sourceStream -- calls read()
 		Bitmap(uint32_t width, uint32_t height, std::istream& sourceStream);
-
+		Bitmap(uint32_t width, uint32_t height);
+		
 		Bitmap(const Bitmap&) noexcept = default;
 		Bitmap(Bitmap&&) noexcept = default;
 
@@ -44,6 +45,7 @@ namespace BitmapGraphics
 		void write(std::ostream& destinationStream) const;
 
 		HBitmapIterator createIterator(std::istream& sourceStream);
+		HBitmapIterator createIterator();
         
     private:
 		uint32_t myWidth{ 0 };

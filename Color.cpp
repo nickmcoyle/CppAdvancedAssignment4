@@ -2,13 +2,11 @@
 
 namespace BitmapGraphics
 {
-    Color::Color(
-        const Binary::Byte& red,
-        const Binary::Byte& green,
-        const Binary::Byte& blue) noexcept :
-        myRed{ red },
-        myGreen{ green },
-        myBlue{ blue }
+
+    Color::Color(const Binary::Byte& red, const Binary::Byte& green, const Binary::Byte& blue) noexcept :
+    myRed{ red },
+    myGreen{ green },
+    myBlue{ blue }
     {
     } 
 
@@ -45,4 +43,5 @@ namespace BitmapGraphics
         color.write(os);
         return os;
     }
+
 }

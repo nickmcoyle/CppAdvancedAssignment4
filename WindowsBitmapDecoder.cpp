@@ -2,10 +2,15 @@
 
 namespace BitmapGraphics
 {
+	
+	WindowsBitmapDecoder::WindowsBitmapDecoder()
+		:myBitmap(Bitmap(0,0))
+	{
+	}
 
 	WindowsBitmapDecoder::WindowsBitmapDecoder(const Bitmap& bitmap)
 		:myBitmap(bitmap)
-	{
+	{		
 	}
 
 	WindowsBitmapDecoder::~WindowsBitmapDecoder()
@@ -13,9 +18,15 @@ namespace BitmapGraphics
 	}
 
 	HBitmapDecoder WindowsBitmapDecoder::clone(std::string const& firstChunk, std::istream& sourceStream)
+	{				
+		myDecoder = CodecLibrary::getInstance().createDecoder(sourceStream);
+		return myDecoder;
+	}
+
+	HBitmapDecoder WindowsBitmapDecoder::clone(std::istream& sourceStream)
 	{
-		//per design patterns book invoke copy constructor?
-		CodecLibrary::createDecoder(sourceStream);
+		myDecoder = CodecLibrary::getInstance().createDecoder(sourceStream);
+		return myDecoder;
 	}
 
 	HBitmapIterator WindowsBitmapDecoder::createIterator(std::istream& sourceStream)

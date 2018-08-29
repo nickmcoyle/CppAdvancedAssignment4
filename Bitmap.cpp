@@ -10,6 +10,12 @@ namespace BitmapGraphics
         read(sourceStream);
     }
     
+	Bitmap::Bitmap(uint32_t width, uint32_t height) :
+		myWidth{ width },
+		myHeight{ height }
+	{		
+	}
+
     int Bitmap::getNumberOfPadBytes() const
     {
         const auto remainder = (myWidth * 3) % 4;
@@ -71,4 +77,10 @@ namespace BitmapGraphics
 	{
 		return HBitmapIterator();
 	}
+
+	HBitmapIterator Bitmap::createIterator()
+	{
+		return HBitmapIterator();
+	}
+
 }

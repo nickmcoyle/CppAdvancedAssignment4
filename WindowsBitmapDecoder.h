@@ -14,7 +14,7 @@ namespace BitmapGraphics
 	class WindowsBitmapDecoder : public IBitmapDecoder
 	{
 	public:
-		WindowsBitmapDecoder() = default;
+		WindowsBitmapDecoder();
 		WindowsBitmapDecoder(const Bitmap& bitmap);
 
 		WindowsBitmapDecoder(const WindowsBitmapDecoder&) = default;
@@ -26,6 +26,7 @@ namespace BitmapGraphics
 		~WindowsBitmapDecoder();
 
 		HBitmapDecoder clone(std::string const& firstChunk, std::istream& sourceStream);
+		HBitmapDecoder clone(std::istream& sourceStream);
 		HBitmapIterator createIterator(std::istream& sourceStream); //created with a stream and produces an iterator
 		std::string getMimeType();
 		bool isSupported(std::string header);
@@ -36,5 +37,6 @@ namespace BitmapGraphics
 		Bitmap myBitmap;
 		const std::string mimeType{ "image/x-ms-bmp" };
 		static const Binary::DoubleWord alignmentValue;
+		HBitmapDecoder myDecoder;
 	};
 }

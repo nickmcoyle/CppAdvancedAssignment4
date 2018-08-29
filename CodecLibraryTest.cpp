@@ -18,8 +18,9 @@ namespace
     std::shared_ptr<CodecLibrary> theCodecLibrary {};
 
     void setUp()
-    {
-        theCodecLibrary.reset(new CodecLibrary);
+    {		
+        //theCodecLibrary.reset(new CodecLibrary); //constructor is inaccesible because this is a singleton
+		theCodecLibrary.reset(CodecLibrary::getInstance);
         theCodecLibrary->registerEncoder(HBitmapEncoder(new WindowsBitmapEncoder));
         theCodecLibrary->registerDecoder(HBitmapDecoder(new WindowsBitmapDecoder));
     }
