@@ -22,18 +22,6 @@ namespace BitmapGraphics
         return (remainder == 0) ? 0 : (4 - remainder);
     }  
 
-	const Color& Bitmap::getPixel(int indexScanLine, int indexPixel) const
-	{
-		auto scanLine = myScanLines.cbegin();
-		std::advance(scanLine, indexScanLine);
-
-		auto pixelIter = scanLine->cbegin();
-
-		std::advance(pixelIter, indexPixel);
-
-		return (*pixelIter);
-	}
-
     void Bitmap::read(std::istream& sourceStream)
     {
         myScanLines.clear();

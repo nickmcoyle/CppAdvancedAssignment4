@@ -4,32 +4,43 @@ template <class Number, Number lowerLimit, Number upperLimit>
 class ranged_number 
 {
 public:
-	// operators and methods to make the class behave
-	// just like an actual number, with the addition of
-	// restricting the range.	
+	ranged_number() :
+		number(0)
+	{
+	};
+
 	ranged_number(Number number) :
 	number(std::clamp(number, lowerLimit, number, upperLimit))
 	{
 	};
 
-	void operator+ (const ranged_number& other) {  this.number += other.number; }
-	void operator- (const ranged_number& other) { this.number -= other.number; }
+	ranged_number(const ranged_number&) = default;
+	ranged_number(ranged_number &&) = default;
 
-	void operator* (const ranged_number& other) { this.number * other.number; }	
-	void operator/ (const ranged_number& other) { this.number / other.number; }
-	void operator% (const ranged_number& other) { this.number % other.number; }
+	ranged_number& operator=(const ranged_number&) = default;
+	ranged_number& operator=(ranged_number&&) = default;
 
-	ranged_number& operator++ () { return ++this.number; }
-	ranged_number& operator-- () { return --this.number; }
+	~ranged_number() = default;
+
+	const int& get() const { return number; };
+		
+	const ranged_number& operator+ (const ranged_number& other) { return this.number += other.number; };
+	const ranged_number& operator- (const ranged_number& other) { return this.number -= other.number; };
+	const ranged_number& operator* (const ranged_number& other) { return this.number * other.number; };
+	const ranged_number& operator/ (const ranged_number& other) { return this.number / other.number; };
+	const ranged_number& operator% (const ranged_number& other) { return this.number % other.number; };
 	
-	
-	bool operator== (const ranged_number& other) { return this.number == other.number; }
-	bool operator!= (const ranged_number& other) { return this.number != other.number; }
-	bool operator> (const ranged_number& other) { return this.number > other.number; }
-	bool operator< (const ranged_number& other) { return this.number < other.number; }
-	bool operator>= (const ranged_number& other) { return this.number >= other.number; }
-	bool operator<= (const ranged_number& other) { return this.number <= other.number; }
+	void operator++ () {};
+	void operator-- () {};
 
+	const ranged_number& operator= (const ranged_number& rhs) { return this.number = rhs.number; };
+	const ranged_number& operator= (const ranged_number&& rhs) { return this.number = rhs.number; };
+
+	const ranged_number& operator+= (const ranged_number& rhs) { return this.number += rhs.number; };
+	const ranged_number& operator-= (const ranged_number& rhs) { return this.number -= rhs.number; };
+
+	bool operator== (const ranged_number& rhs) { return this.number == rhs.number; };
+	bool operator!= (const ranged_number& rhs) { return !this==rhs; };
 
 private:
 	Number number;

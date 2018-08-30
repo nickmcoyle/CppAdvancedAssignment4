@@ -4,7 +4,7 @@
 
 TEST(cTor, ranged_number)
 {
-    ranged_number<short, 1, 12> grade{};
+    ranged_number<short, 1, 12> grade{};	
 
     grade = 5;
     CHECK_EQUAL(5, grade);

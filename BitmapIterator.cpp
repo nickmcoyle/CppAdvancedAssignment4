@@ -2,22 +2,23 @@
 
 namespace BitmapGraphics
 {
-	BitmapIterator::BitmapIterator(const Bitmap& myBitmap) :
+	BitmapIterator::BitmapIterator(Bitmap& myBitmap) :
 		myBitmap(myBitmap),
-		indexScanLine(0),
-		indexPixel(0)
-	{
+		scanLineCollectionIterator(myBitmap.begin()),
+		pixelIterator((*scanLineCollectionIterator).cbegin())
+	{			
 	}
 
 	void BitmapIterator::nextScanLine()
 	{
-		indexScanLine++;
-		indexPixel = 0;
+		scanLineCollectionIterator++;
+		//reset pixelIterator
+		pixelIterator = (*scanLineCollectionIterator).cbegin();		
 	}
 
 	bool BitmapIterator::isEndOfImage() const
 	{
-		if (indexScanLine > this->getBitmapHeight())
+		if (scanLineCollectionIterator == myBitmap.end())
 		{
 			return true;
 		}
@@ -26,12 +27,12 @@ namespace BitmapGraphics
 
 	void BitmapIterator::nextPixel()
 	{
-		indexPixel++;
+		pixelIterator++;
 	}
 
 	bool BitmapIterator::isEndOfScanLine() const
 	{
-		if (indexPixel > this->getBitmapWidth())
+		if (pixelIterator == (*scanLineCollectionIterator).cend())
 		{
 			return true;
 		}
@@ -39,17 +40,12 @@ namespace BitmapGraphics
 	}
 
 	Color BitmapIterator::getColor() const
-	{
-		if(isEndOfScanLine)
-		{
-			throw std::runtime_error("Request to get color reached end of ScanLine");
-		}
+	{		
 		if (isEndOfImage)
 		{
-			throw std::runtime_error("Request to get color reached end image");
+			throw std::out_of_range("Request to get color reached end of bitmap");
 		}
-		
-		return myBitmap.getPixel(indexScanLine, indexPixel);
+		return (*pixelIterator);
 	}
 
 	int BitmapIterator::getBitmapWidth() const

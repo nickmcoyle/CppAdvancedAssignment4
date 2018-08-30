@@ -7,7 +7,7 @@
 #include <memory>
 
 namespace BitmapGraphics
-{
+{	
 	class Bitmap
 	{
 	public:
@@ -39,8 +39,6 @@ namespace BitmapGraphics
 		int getHeight() const noexcept { return myHeight; }
 		int getNumberOfPadBytes() const;
 				
-		const Color& getPixel(int indexScanLine, int indexPixel) const;
-
 		void read(std::istream& sourceStream);
 		void write(std::ostream& destinationStream) const;
 

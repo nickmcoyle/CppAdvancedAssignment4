@@ -11,26 +11,7 @@ namespace BitmapGraphics
 	class PosterizeDecorator : public BitmapIteratorDecorator
 	{
 	public:
-		PosterizeDecorator(HBitmapIterator const& originalIterator)
-			: originalIterator(originalIterator)
-		{
-		}				
-
-		void nextScanLine() {
-			originalIterator->nextScanLine();
-		}
-
-		bool isEndOfImage() const {
-			return originalIterator->isEndOfImage();
-		}
-
-		void nextPixel() {
-			originalIterator->nextPixel();
-		}
-
-		bool isEndOfScanLine() const {
-			return originalIterator->isEndOfScanLine();
-		}
+		PosterizeDecorator() = default;
 
 		const Binary::Byte& posterizeColor(const Binary::Byte& color) const
 		{
@@ -64,9 +45,6 @@ namespace BitmapGraphics
 			Binary::Byte const blue = posterizeColor(oldColor.getBlue());			
 
 			return Color(red, green, blue);
-		}
-
-	private:
-		HBitmapIterator originalIterator;		
+		}	
 	};
 }

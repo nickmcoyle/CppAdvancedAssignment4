@@ -11,39 +11,20 @@ namespace BitmapGraphics
 	class ColorInversionDecorator : public BitmapIteratorDecorator
 	{
 	public:
-		ColorInversionDecorator(HBitmapIterator const& originalIterator)
-			: originalIterator(originalIterator)
-		{
-		}				
-
-		void nextScanLine() {
-			originalIterator->nextScanLine();
-		}
-
-		bool isEndOfImage() const {
-			return originalIterator->isEndOfImage();
-		}
-
-		void nextPixel() {
-			originalIterator->nextPixel();
-		}
-
-		bool isEndOfScanLine() const {
-			return originalIterator->isEndOfScanLine();
-		}
+		ColorInversionDecorator() = default;
 
 		Color getColor() const {
-			Color const oldColor = originalIterator->getColor();
+			Color const oldColor = originalIterator->getColor();			
 
-			ColorComponent const red = 255 - oldColor.getRed();
-			ColorComponent const green = 255 - oldColor.getGreen();
-			ColorComponent const blue = 255 - oldColor.getBlue();
-
-			return Color(red, green, blue);
-		}
-
-	private:
-		using ColorComponent = ranged_number <int, 0, 255>;
-		HBitmapIterator originalIterator;		
+			ColorComponent const red = Binary::Byte(255) - oldColor.getRed();
+			ColorComponent const green = Binary::Byte(255) - oldColor.getGreen();
+			ColorComponent const blue = Binary::Byte(255) - oldColor.getBlue();
+			
+			const Binary::Byte byteRed(red.get());
+			const Binary::Byte byteGreen(green.get());
+			const Binary::Byte byteBlue(blue.get());
+			
+			return Color(byteRed, byteGreen, byteBlue);
+		}	
 	};
 }

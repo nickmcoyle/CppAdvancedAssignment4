@@ -10,11 +10,8 @@ namespace BitmapGraphics
 	class BrightnessDecorator : public BitmapIteratorDecorator
 	{
 	public:
-		BrightnessDecorator(HBitmapIterator const& originalIterator)
-			: originalIterator(originalIterator), brightnessAdjustment(0) 
-		{
-		}
-
+		BrightnessDecorator() = default;
+		
 		void setBrightnessAdjustment(int brightnessAdjustment) {
 			this->brightnessAdjustment = brightnessAdjustment;
 		}
@@ -23,35 +20,21 @@ namespace BitmapGraphics
 			return this->brightnessAdjustment;
 		}
 
-		void nextScanLine() {
-			originalIterator->nextScanLine();
-		}
-
-		bool isEndOfImage() const {
-			return originalIterator->isEndOfImage();
-		}
-
-		void nextPixel() {
-			originalIterator->nextPixel();
-		}
-
-		bool isEndOfScanLine() const {
-			return originalIterator->isEndOfScanLine();
-		}
-
 		Color getColor() const {
 			Color const oldColor = originalIterator->getColor();
 			
-			ColorComponent const red = oldColor.getRed() + brightnessAdjustment;
-			ColorComponent const green = oldColor.getGreen() + brightnessAdjustment;
-			ColorComponent const blue = oldColor.getBlue() + brightnessAdjustment;
+			ColorComponent const red = oldColor.getRed() + Binary::Byte(brightnessAdjustment);
+			ColorComponent const green = oldColor.getGreen() + Binary::Byte(brightnessAdjustment);
+			ColorComponent const blue = oldColor.getBlue() + Binary::Byte(brightnessAdjustment);
 
-			return Color(red, green, blue);
+			const Binary::Byte byteRed(red.get());
+			const Binary::Byte byteGreen(green.get());
+			const Binary::Byte byteBlue(blue.get());
+
+			return Color(byteRed, byteGreen, byteBlue);
 		}
 
-	private:
-		using ColorComponent = ranged_number <int, 0, 255>;		
-		HBitmapIterator originalIterator;
-		Binary::Byte brightnessAdjustment;
+	private:		
+		int brightnessAdjustment = 0;
 	};
 }
