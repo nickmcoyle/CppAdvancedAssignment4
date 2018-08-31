@@ -2,6 +2,13 @@
 
 namespace BitmapGraphics
 {
+	BitmapIterator::BitmapIterator() :
+		myBitmap(Bitmap(0,0)),
+		scanLineCollectionIterator(myBitmap.begin()),
+		pixelIterator((*scanLineCollectionIterator).cbegin())
+	{
+
+	}
 	BitmapIterator::BitmapIterator(Bitmap& myBitmap) :
 		myBitmap(myBitmap),
 		scanLineCollectionIterator(myBitmap.begin()),
@@ -56,6 +63,11 @@ namespace BitmapGraphics
 	int BitmapIterator::getBitmapHeight() const
 	{
 		return myBitmap.getHeight();
+	}
+	
+	int BitmapIterator::getNumberOfPadBytes() const
+	{		
+		return myBitmap.getNumberOfPadBytes();
 	}
 
 }

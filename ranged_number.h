@@ -1,5 +1,7 @@
 #pragma once
 
+#include "SizedWord.h"
+
 template <class Number, Number lowerLimit, Number upperLimit>
 class ranged_number 
 {
@@ -10,7 +12,7 @@ public:
 	};
 
 	ranged_number(Number number) :
-	number(std::clamp(number, lowerLimit, number, upperLimit))
+	number(std::clamp(number, lowerLimit, number, upperLimit))	
 	{
 	};
 
@@ -22,7 +24,8 @@ public:
 
 	~ranged_number() = default;
 
-	const int& get() const { return number; };
+	const int& getNumber() const { return number; };
+	const Binary::Byte& getByte() const { return static_cast<Binary::Byte>(number); };
 		
 	const ranged_number& operator+ (const ranged_number& other) { return this.number += other.number; };
 	const ranged_number& operator- (const ranged_number& other) { return this.number -= other.number; };
@@ -43,5 +46,5 @@ public:
 	bool operator!= (const ranged_number& rhs) { return !this==rhs; };
 
 private:
-	Number number;
+	Number number;	
 };

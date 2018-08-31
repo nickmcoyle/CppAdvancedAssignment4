@@ -26,15 +26,11 @@ namespace BitmapGraphics
 			ColorComponent const red = oldColor.getRed() + Binary::Byte(brightnessAdjustment);
 			ColorComponent const green = oldColor.getGreen() + Binary::Byte(brightnessAdjustment);
 			ColorComponent const blue = oldColor.getBlue() + Binary::Byte(brightnessAdjustment);
-
-			const Binary::Byte byteRed(red.get());
-			const Binary::Byte byteGreen(green.get());
-			const Binary::Byte byteBlue(blue.get());
-
-			return Color(byteRed, byteGreen, byteBlue);
+						
+			return Color(red.getByte(), green.getByte(), blue.getByte());
 		}
 
 	private:		
-		int brightnessAdjustment = 0;
+		uint8_t brightnessAdjustment = 0;
 	};
 }

@@ -1,9 +1,13 @@
 #pragma once
 
+#include "CodecLibrary.h"
 #include "IBitmapEncoder.h"
 #include "Bitmap.h"
+#include "SizedWord.h"
 #include <string>
+#include <sstream>
 #include <iostream>
+#include <memory>
 
 namespace BitmapGraphics
 {	
@@ -21,7 +25,8 @@ namespace BitmapGraphics
 		~WindowsBitmapEncoder();
 
 		HBitmapEncoder clone(const HBitmapIterator& bitmapIterator);
-		std::ostream encodeToStream(HBitmapIterator& bitmapIter); //encoder is created with an iterator and produces/encodes to a stream
+		std::ostream& encodeToStream(HBitmapIterator& bitmapIter); //encoder is created with an iterator and produces/encodes to a stream
+		std::ostream& encodeToStream(std::ofstream& stream);
 		std::string getMimeType();
 
 	private:

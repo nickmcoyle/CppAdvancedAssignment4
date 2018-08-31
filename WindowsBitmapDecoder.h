@@ -27,7 +27,9 @@ namespace BitmapGraphics
 
 		HBitmapDecoder clone(std::string const& firstChunk, std::istream& sourceStream);
 		HBitmapDecoder clone(std::istream& sourceStream);
-		HBitmapIterator createIterator(std::istream& sourceStream); //created with a stream and produces an iterator
+		HBitmapIterator createIterator();
+		HBitmapIterator createIterator(std::istream& sourceStream); //created with a stream and produces an iterator		
+
 		std::string getMimeType();
 		bool isSupported(std::string header);
 

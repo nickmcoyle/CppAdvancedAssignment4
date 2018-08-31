@@ -3,7 +3,7 @@
 namespace BitmapGraphics
 {
 
-	WindowsBitmapEncoder::WindowsBitmapEncoder()		
+	WindowsBitmapEncoder::WindowsBitmapEncoder()	
 	{
 	}
 
@@ -16,28 +16,35 @@ namespace BitmapGraphics
 		myEncoder = CodecLibrary::getInstance().createEncoder(mimeType, bitmapIterator);
 		return myEncoder;
 	}
-
-	std::ostream WindowsBitmapEncoder::encodeToStream(HBitmapIterator& bitmapIter)
+	
+	std::ostream& WindowsBitmapEncoder::encodeToStream(HBitmapIterator& bitmapIter)
 	{
 		std::ostream destinationStream(NULL);
-		/*
-		while (!isEndofImage)
+		
+		while (!bitmapIter->isEndOfImage())
 		{
 			//write pixels
-			While(!isEndofScanLine)
+			while (!bitmapIter->isEndOfScanLine())
 			{
-				std::copy(getColor());
+				destinationStream << bitmapIter->getColor();
 			}
 
 			//write pad bytes
-			for (auto pad = 0; pad < alignmentValue; ++pad)
+			for (auto pad = 0; pad < bitmapIter->getNumberOfPadBytes(); ++pad)
 			{
 				Binary::Byte(0).write(destinationStream);
 			}
-			nextScanLine();
+			bitmapIter->nextScanLine();
 		}
-		*/
-		//return destinationStream;
+		
+		return destinationStream;
+	}
+
+	std::ostream& WindowsBitmapEncoder::encodeToStream(std::ofstream& stream)
+	{
+		std::ostream outputStream(NULL);
+		outputStream << stream;
+		return outputStream;
 	}
 
 	std::string WindowsBitmapEncoder::getMimeType()

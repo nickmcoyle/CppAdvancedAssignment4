@@ -14,6 +14,7 @@ namespace BitmapGraphics
 	class BitmapIterator : public IBitmapIterator
 	{	
 	public:
+		BitmapIterator();
 		BitmapIterator(Bitmap& myBitmap);	
 
 		BitmapIterator(const BitmapIterator& other) = default;
@@ -31,7 +32,9 @@ namespace BitmapGraphics
 		Color getColor() const; //returns the color of the current pixel
 
 		int getBitmapWidth() const;
-		int getBitmapHeight() const;
+		int getBitmapHeight() const;	
+
+		int getNumberOfPadBytes() const;
 		
 	private:		
 		Bitmap& myBitmap;

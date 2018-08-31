@@ -29,10 +29,16 @@ namespace BitmapGraphics
 		return myDecoder;
 	}
 
+	HBitmapIterator WindowsBitmapDecoder::createIterator()
+	{
+		return myBitmap.createIterator();
+
+	}
+
 	HBitmapIterator WindowsBitmapDecoder::createIterator(std::istream& sourceStream)
 	{
 		return myBitmap.createIterator(sourceStream);
-	}
+	}	
 
 	std::string WindowsBitmapDecoder::getMimeType()
 	{
