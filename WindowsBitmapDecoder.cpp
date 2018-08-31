@@ -4,13 +4,17 @@ namespace BitmapGraphics
 {
 	
 	WindowsBitmapDecoder::WindowsBitmapDecoder()
-		:myBitmap(Bitmap(0,0))
+		:myBitmap(Bitmap(0,0)),
+		myDecoder(this)
 	{
+		CodecLibrary::getInstance().registerDecoder(myDecoder);
 	}
 
 	WindowsBitmapDecoder::WindowsBitmapDecoder(const Bitmap& bitmap)
-		:myBitmap(bitmap)
+		:myBitmap(bitmap),
+		myDecoder(this)
 	{		
+		CodecLibrary::getInstance().registerDecoder(myDecoder);
 	}
 
 	WindowsBitmapDecoder::~WindowsBitmapDecoder()
@@ -32,7 +36,6 @@ namespace BitmapGraphics
 	HBitmapIterator WindowsBitmapDecoder::createIterator()
 	{
 		return myBitmap.createIterator();
-
 	}
 
 	HBitmapIterator WindowsBitmapDecoder::createIterator(std::istream& sourceStream)

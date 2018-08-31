@@ -21,12 +21,17 @@ namespace BitmapGraphics
 
 	HBitmapDecoder CodecLibrary::createDecoder(std::istream& sourceStream)
 	{
+		//take first 100 bytes and determine the correct decoder to return		
+		std::string header(std::istreambuf_iterator<char>(sourceStream), {});
+		sourceStream.seekg;
+				
 		//lookup decoder from the collection and return handle to it?
-		if ()
+		for (const auto& decoder : myDecoders)
+		if (decoder->isSupported(header))
 		{
-
+			return decoder->clone(header, sourceStream);
 		}
-		return HBitmapDecoder();
+		throw std::runtime_error("No decoder available for this file type");
 	}
 
 	HBitmapDecoder CodecLibrary::createDecoder(std::string const& mimeType, std::istream& sourceStream)
@@ -35,16 +40,20 @@ namespace BitmapGraphics
 		//actualMimeType = something from source stream;
 		if (mimeType != actualMimeType)
 		{
-			throw std::runtime_error{ "Error creating encoder, Mime type does not match the source file" };
+			throw std::runtime_error{ "Error creating decoder, Mime type does not match the source file" };
 		}
-		//take first 100 bytes and determine the correct decoder to return
-		return HBitmapDecoder();
+		return createDecoder(sourceStream);
 	}
 
 	HBitmapEncoder CodecLibrary::createEncoder(std::string const& mimeType, HBitmapIterator const& bitmapIterator)
 	{
-		//take first 100 bytes and determine the correct decoder to return
-		return HBitmapEncoder();
+		//lookup decoder from the collection and return handle to it?
+		for (const auto& encoder : myEncoders)
+			if (encoder->getMimeType() == mimeType)
+			{
+				return encoder->clone(bitmapIterator);
+			}
+		throw std::runtime_error("No encoder available for this file type");
 	}
 
 }

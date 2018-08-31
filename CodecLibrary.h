@@ -8,9 +8,6 @@
 
 namespace BitmapGraphics
 {
-	using HBitmapDecoder = std::shared_ptr<IBitmapDecoder>;
-	using HBitmapEncoder = std::shared_ptr<IBitmapEncoder>;
-
 	class CodecLibrary
 	{
 	public:

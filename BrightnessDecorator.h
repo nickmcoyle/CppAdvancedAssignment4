@@ -13,6 +13,10 @@ namespace BitmapGraphics
 		BrightnessDecorator() = default;
 		
 		void setBrightnessAdjustment(int brightnessAdjustment) {
+			if (brightnessAdjustment > 255 || brightnessAdjustment < 0)
+			{
+				throw std::runtime_error("BrightnessAdjustment must be between 0 and 255");
+			}
 			this->brightnessAdjustment = brightnessAdjustment;
 		}
 
@@ -31,6 +35,6 @@ namespace BitmapGraphics
 		}
 
 	private:		
-		uint8_t brightnessAdjustment = 0;
+		int brightnessAdjustment = 0;
 	};
 }

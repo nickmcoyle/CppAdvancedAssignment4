@@ -53,7 +53,9 @@
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Failure.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="ranged_number.cpp" />
+    <ClCompile Include="MyBitmapEncodeDecodeTests.cpp" />
+    <ClCompile Include="Myranged_numberTest.cpp" />
+    <ClCompile Include="MyWindowsBitmapHeaderTest.cpp" />
     <ClCompile Include="ranged_numberTest.cpp" />
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="TestRegistry.cpp" />

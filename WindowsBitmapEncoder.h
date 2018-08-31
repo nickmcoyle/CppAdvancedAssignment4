@@ -11,6 +11,8 @@
 
 namespace BitmapGraphics
 {	
+	using HBitmapEncoder = std::shared_ptr<IBitmapEncoder>;
+
 	class WindowsBitmapEncoder : public IBitmapEncoder
 	{
 	public:
