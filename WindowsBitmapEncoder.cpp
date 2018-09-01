@@ -3,7 +3,7 @@
 namespace BitmapGraphics
 {
 
-	WindowsBitmapEncoder::WindowsBitmapEncoder()	
+	WindowsBitmapEncoder::WindowsBitmapEncoder()
 	{
 	}
 
@@ -40,11 +40,10 @@ namespace BitmapGraphics
 		return destinationStream;
 	}
 
-	std::ostream& WindowsBitmapEncoder::encodeToStream(std::ofstream& stream)
-	{
-		std::ostream outputStream(NULL);
-		outputStream << stream;
-		return outputStream;
+	void WindowsBitmapEncoder::encodeToStream(const std::ofstream& stream)
+	{			
+		//I dont know what to do here
+		stream;
 	}
 
 	std::string WindowsBitmapEncoder::getMimeType()

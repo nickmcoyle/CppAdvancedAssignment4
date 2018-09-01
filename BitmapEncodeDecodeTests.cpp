@@ -164,7 +164,7 @@ TEST(BitmapReadWrite_101, Bitmap)
     
     WindowsBitmapEncoder encoderPrototype{};
     HBitmapEncoder encoder {encoderPrototype.clone(bitmapIter)};
-
+	
     encoder->encodeToStream(outputStream);
     outputStream.close();
     

@@ -36,9 +36,6 @@ public:
 	void operator++ () {};
 	void operator-- () {};
 
-	const ranged_number& operator= (const ranged_number& rhs) { return this.number = rhs.number; };
-	const ranged_number& operator= (const ranged_number&& rhs) { return this.number = rhs.number; };
-
 	const ranged_number& operator+= (const ranged_number& rhs) { return this.number += rhs.number; };
 	const ranged_number& operator-= (const ranged_number& rhs) { return this.number -= rhs.number; };
 

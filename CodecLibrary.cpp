@@ -10,13 +10,13 @@ namespace BitmapGraphics
 	}
 
 	void CodecLibrary::registerEncoder(HBitmapEncoder const& encoder)
-	{
-		myEncoders.push_back(encoder);
+	{		
+		myEncoders.emplace(encoder->getMimeType(), encoder);
 	}
 
 	void CodecLibrary::registerDecoder(HBitmapDecoder const& decoder)
 	{
-		myDecoders.push_back(decoder);
+		myDecoders.emplace(decoder->getMimeType(), decoder);
 	}
 
 	HBitmapDecoder CodecLibrary::createDecoder(std::istream& sourceStream)
@@ -27,33 +27,40 @@ namespace BitmapGraphics
 				
 		//lookup decoder from the collection and return handle to it?
 		for (const auto& decoder : myDecoders)
-		if (decoder->isSupported(header))
-		{
-			return decoder->clone(header, sourceStream);
+		if (decoder.second->isSupported(header))
+		{			
+			HBitmapDecoder instance = decoder.second;
+			return instance;
 		}
+
 		throw std::runtime_error("No decoder available for this file type");
 	}
 
 	HBitmapDecoder CodecLibrary::createDecoder(std::string const& mimeType, std::istream& sourceStream)
 	{
-		std::string actualMimeType = "";
-		//actualMimeType = something from source stream;
-		if (mimeType != actualMimeType)
-		{
+		//take first 100 bytes and determine the correct decoder to return		
+		std::string header(std::istreambuf_iterator<char>(sourceStream), {});
+		sourceStream.seekg;
+
+		if (!myDecoders[mimeType]->isSupported(header))
+		{		
 			throw std::runtime_error{ "Error creating decoder, Mime type does not match the source file" };
 		}
-		return createDecoder(sourceStream);
+
+		HBitmapDecoder instance = myDecoders[mimeType];
+		return instance;
 	}
 
 	HBitmapEncoder CodecLibrary::createEncoder(std::string const& mimeType, HBitmapIterator const& bitmapIterator)
 	{
-		//lookup decoder from the collection and return handle to it?
-		for (const auto& encoder : myEncoders)
-			if (encoder->getMimeType() == mimeType)
-			{
-				return encoder->clone(bitmapIterator);
-			}
-		throw std::runtime_error("No encoder available for this file type");
+		//lookup decoder from the collection and return handle to it?		
+		if (myEncoders[mimeType] == nullptr)
+		{
+			throw std::runtime_error("No encoder available for this file type");
+		}
+			
+		HBitmapEncoder instance = myEncoders[mimeType];
+		return instance;
 	}
 
 }

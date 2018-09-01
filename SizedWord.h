@@ -26,7 +26,7 @@ namespace Binary
 		{
 			destinationStream.exceptions(std::ios::failbit | std::ios::badbit);
 			destinationStream.put(static_cast<char>(myData));
-		}
+		};
 
 		template<typename = std::enable_if_t<sizeof(WordSize) != 1>>
 		void writeLittleEndian(std::ostream& destinationStream) const
@@ -39,7 +39,7 @@ namespace Binary
 				unsigned char c = static_cast<unsigned char>((myData >> (8 * byte)));
 				destinationStream.put(c);
 			}
-		}
+		};
 
 		template<typename = std::enable_if_t<sizeof(WordSize) != 1>>
 		void writeBigEndian(std::ostream& destinationStream) const
@@ -51,14 +51,14 @@ namespace Binary
 				unsigned char c = static_cast<unsigned char>((myData >> (8 * (byte - 1))));
 				destinationStream.put(c);
 			}
-		}
+		};
 
 		template<typename = std::enable_if_t<sizeof(WordSize) == 1>>
 		static SizedWord read(std::istream& sourceStream)
 		{ 
 			sourceStream.exceptions(std::ios::failbit | std::ios::badbit);
 			return SizedWord{ static_cast<WordSize>(sourceStream.get()) };
-		}
+		};
 
 		template<typename = std::enable_if_t<sizeof(WordSize) != 1>>
 		static SizedWord readLittleEndian(std::istream& sourceStream)
@@ -74,7 +74,7 @@ namespace Binary
 			}
 
 			return word;
-		}
+		};
 
 		template<typename = std::enable_if_t<sizeof(WordSize) != 1>>
 		static SizedWord readBigEndian(std::istream& sourceStream)
@@ -90,29 +90,28 @@ namespace Binary
 			}
 
 			return word;
-		}
+		};
 
-		bool operator==(const SizedWord& rhs) const noexcept { return myData == rhs.myData; }
-		bool operator!=(const SizedWord& rhs) const noexcept { return !(operator==(rhs)); }
-
+		bool operator==(const SizedWord& rhs) const noexcept { return myData == rhs.myData; };
+		bool operator!=(const SizedWord& rhs) const noexcept { return (!(operator==(rhs))); };
 		
-		const Byte& operator+ (const SizedWord& rhs) { return this->myData + rhs->myData; }
-		const Byte& operator- (const SizedWord& rhs) { return this->myData - rhs->myData; }		
-
-		const Byte& operator+ (const SizedWord& rhs) { return this->myData + rhs->myData; }
-		const Byte& operator- (const int& other) { return this->myData - rhs->myData; }
-
-		const Byte& operator> (const int rhs) const { return this->myData > rhs; }
-		const Byte& operator< (const int rhs) const { return this->myData < rhs; }
 		
+		const SizedWord<std::uint8_t>& operator+(const SizedWord& rhs) { return this->myData + rhs->myData; };
+		const SizedWord<std::uint8_t>& operator-(const SizedWord& rhs) { return this->myData - rhs->myData; };	
 
-		explicit operator WordSize() const { return myData; }
+		const SizedWord<std::uint8_t>& operator*(const SizedWord& rhs) { return this->myData * rhs->myData; };
+		const SizedWord<std::uint8_t>& operator/(const SizedWord& rhs) { return this->myData / rhs->myData; };
+
+		const SizedWord<std::uint8_t>& operator>(const int rhs) const { return this->myData > rhs; };
+		const SizedWord<std::uint8_t>& operator<(const int rhs) const { return this->myData < rhs; };
+		
+		explicit operator WordSize() const { return myData; };
 
 		friend std::ostream& operator<<(std::ostream& os, const SizedWord& word)
 		{
 			os << word.myData;
 			return os;
-		}
+		};
 
 	private:
 		static_assert(std::is_integral_v<WordSize> && std::is_unsigned_v<WordSize>, "Unsigned Integral Type required for template creation of base type");

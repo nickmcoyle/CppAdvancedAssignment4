@@ -19,6 +19,6 @@ namespace BitmapGraphics
 		virtual int getBitmapWidth() const = 0;
 		virtual int getBitmapHeight() const = 0;
 
-		virtual int getNumberOfPadBytes() = 0;
+		virtual int getNumberOfPadBytes() const = 0;
 	};
 }

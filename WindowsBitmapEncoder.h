@@ -7,6 +7,7 @@
 #include <string>
 #include <sstream>
 #include <iostream>
+#include <fstream>
 #include <memory>
 
 namespace BitmapGraphics
@@ -26,13 +27,12 @@ namespace BitmapGraphics
 
 		~WindowsBitmapEncoder();
 
-		HBitmapEncoder clone(const HBitmapIterator& bitmapIterator);
+		HBitmapEncoder clone(HBitmapIterator& bitmapIterator);
 		std::ostream& encodeToStream(HBitmapIterator& bitmapIter); //encoder is created with an iterator and produces/encodes to a stream
-		std::ostream& encodeToStream(std::ofstream& stream);
+		void encodeToStream(const std::ofstream& stream);		
 		std::string getMimeType();
 
-	private:
-		BitmapIterator myBitmapIterator;
+	private:		
 		const std::string mimeType{ "image/x-ms-bmp" };
 		static const Binary::DoubleWord alignmentValue;
 		HBitmapEncoder myEncoder;

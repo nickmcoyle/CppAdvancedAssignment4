@@ -4,6 +4,7 @@
 #include "WindowsBitmapDecoder.h"
 #include "BitmapIterator.h"
 #include "Bitmap.h"
+#include <map>
 #include <list>
 
 namespace BitmapGraphics
@@ -14,8 +15,8 @@ namespace BitmapGraphics
 		static CodecLibrary& getInstance();
 
 	private:
-		using BitmapEncoderCollection = std::list<HBitmapEncoder>;
-		using BitmapDecoderCollection = std::list<HBitmapDecoder>;		
+		using BitmapEncoderCollection = std::map<std::string, HBitmapEncoder>;
+		using BitmapDecoderCollection = std::map<std::string, HBitmapDecoder>;		
 
 		
 		CodecLibrary() = default; //private constructor prevents instantiation outside of this class
