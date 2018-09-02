@@ -1,4 +1,5 @@
 #include "Bitmap.h"
+#include "BitmapIterator.h"
 #include "binary_ostream_iterator.h"
 
 namespace BitmapGraphics
@@ -60,15 +61,15 @@ namespace BitmapGraphics
             }
         }
     }
-/*
-	HBitmapIterator Bitmap::createIterator(std::istream& sourceStream)
-	{
-		return HBitmapIterator();
-	}*/
 
 	HBitmapIterator Bitmap::createIterator()
 	{
-		return HBitmapIterator();
+		if (this == nullptr)
+		{
+			throw std::runtime_error("Cannot create iterator on empty Bitmap");
+		}
+
+		return std::make_shared<BitmapIterator>(*this);
 	}
 
 }

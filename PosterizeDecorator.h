@@ -7,14 +7,18 @@
 
 namespace BitmapGraphics
 {
-
 	class PosterizeDecorator : public BitmapIteratorDecorator
 	{
 	public:
 		PosterizeDecorator() = default;
+		PosterizeDecorator(const PosterizeDecorator&) = default;
+		PosterizeDecorator(PosterizeDecorator&&) = default;
+		PosterizeDecorator& operator=(const PosterizeDecorator&) = default;
+		PosterizeDecorator& operator=(PosterizeDecorator&&) = default;
+		~PosterizeDecorator() = default;
 
 		const Binary::Byte& posterizeColor(const int& color) const
-		{
+		{			
 			if (color < 64)
 			{
 				return Binary::Byte(31);

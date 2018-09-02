@@ -93,17 +93,7 @@ namespace Binary
 		};
 
 		bool operator==(const SizedWord& rhs) const noexcept { return myData == rhs.myData; };
-		bool operator!=(const SizedWord& rhs) const noexcept { return (!(operator==(rhs))); };
-		
-		
-		const SizedWord<std::uint8_t>& operator+(const SizedWord& rhs) { return this->myData + rhs->myData; };
-		const SizedWord<std::uint8_t>& operator-(const SizedWord& rhs) { return this->myData - rhs->myData; };	
-
-		const SizedWord<std::uint8_t>& operator*(const SizedWord& rhs) { return this->myData * rhs->myData; };
-		const SizedWord<std::uint8_t>& operator/(const SizedWord& rhs) { return this->myData / rhs->myData; };
-
-		const SizedWord<std::uint8_t>& operator>(const int rhs) const { return this->myData > rhs; };
-		const SizedWord<std::uint8_t>& operator<(const int rhs) const { return this->myData < rhs; };
+		bool operator!=(const SizedWord& rhs) const noexcept { return (!(operator==(rhs))); };		
 		
 		explicit operator WordSize() const { return myData; };
 
@@ -119,7 +109,6 @@ namespace Binary
 		static_assert(std::is_integral_v<WordSize> && std::is_unsigned_v<WordSize>, "Unsigned Integral Type required for template creation of base type");
 
 		WordSize myData{ static_cast<WordSize>('0') };
-
 	};
 
 	using Byte = SizedWord<std::uint8_t>;

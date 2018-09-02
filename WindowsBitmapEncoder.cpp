@@ -1,25 +1,21 @@
 #include "WindowsBitmapEncoder.h"
 
 namespace BitmapGraphics
-{
+{	
 
-	WindowsBitmapEncoder::WindowsBitmapEncoder()
-	{
-	}
-
-	WindowsBitmapEncoder::~WindowsBitmapEncoder()
-	{
-	}
+	const std::string WindowsBitmapEncoder::mimeType = "image/x-ms-bmp";
 
 	HBitmapEncoder WindowsBitmapEncoder::clone(const HBitmapIterator& bitmapIterator)
 	{
-		myEncoder = CodecLibrary::getInstance().createEncoder(mimeType, bitmapIterator);
-		return myEncoder;
+		return std::make_shared<WindowsBitmapEncoder>();
 	}
 	
 	std::ostream& WindowsBitmapEncoder::encodeToStream(HBitmapIterator& bitmapIter)
 	{
 		std::ostream destinationStream(NULL);
+		
+		//make header
+		WindowsBitmapHeader().writeFileHeader(destinationStream);
 		
 		while (!bitmapIter->isEndOfImage())
 		{
@@ -27,7 +23,7 @@ namespace BitmapGraphics
 			while (!bitmapIter->isEndOfScanLine())
 			{
 				destinationStream << bitmapIter->getColor();
-			}
+			}			
 
 			//write pad bytes
 			for (auto pad = 0; pad < bitmapIter->getNumberOfPadBytes(); ++pad)

@@ -19,17 +19,17 @@ namespace BitmapGraphics
 
 		~BitmapIterator() = default;
 		
-		void nextScanLine(); 
-		bool isEndOfImage() const; //tests whether we have advanced beyond the last element (scanline in the bitmap) i.e. finished with the traversal
-		void nextPixel(); 
-		bool isEndOfScanLine() const; //tests whether we have advanced beyond the last element (pixel in the scanline) i.e. finished with the traversal
+		virtual void nextScanLine() override; 
+		virtual bool isEndOfImage() const override; //tests whether we have advanced beyond the last element (scanline in the bitmap) i.e. finished with the traversal
+		virtual void nextPixel() override; 
+		virtual bool isEndOfScanLine() const override; //tests whether we have advanced beyond the last element (pixel in the scanline) i.e. finished with the traversal
 
-		Color getColor() const; //returns the color of the current pixel
+		virtual Color getColor() const override; //returns the color of the current pixel
 
-		int getBitmapWidth() const;
-		int getBitmapHeight() const;	
+		int getNumberOfPadBytes() const;
 
-	//	int getNumberOfPadBytes() const;
+		virtual int getBitmapWidth() const override;
+		virtual int getBitmapHeight() const override;	
 		
 	private:		
 		int bitmapWidth;
@@ -37,7 +37,6 @@ namespace BitmapGraphics
 
 		Bitmap::ScanLineIterator scanLineIterator;
 		Bitmap::ScanLineIterator scanLineEnd;
-		Bitmap::ScanLine::const_iterator colorIterator;
-
+		Bitmap::ScanLine::const_iterator pixelIterator;
 	};	
 }

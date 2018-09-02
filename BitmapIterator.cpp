@@ -8,15 +8,14 @@ namespace BitmapGraphics
 		bitmapHeight(bitmap.getHeight()),
 		scanLineIterator(bitmap.begin()),
 		scanLineEnd(bitmap.end()),
-		colorIterator(scanLineIterator->cbegin())
+		pixelIterator(scanLineIterator->cbegin())
 	{			
 	}
 
 	void BitmapIterator::nextScanLine()
 	{
-		scanLineIterator++;
-		//reset pixelIterator
-		colorIterator = scanLineIterator->cbegin();
+		scanLineIterator++;		
+		pixelIterator = scanLineIterator->cbegin();
 	}
 
 	bool BitmapIterator::isEndOfImage() const
@@ -30,12 +29,12 @@ namespace BitmapGraphics
 
 	void BitmapIterator::nextPixel()
 	{
-		colorIterator++;
+		pixelIterator++;
 	}
 
 	bool BitmapIterator::isEndOfScanLine() const
 	{
-		if (colorIterator == scanLineIterator->cend())
+		if (pixelIterator == scanLineIterator->cend())
 		{
 			return true;
 		}
@@ -48,7 +47,13 @@ namespace BitmapGraphics
 		{
 			throw std::out_of_range("Request to get color reached end of bitmap");
 		}
-		return (*colorIterator);
+		return (*pixelIterator);
+	}
+
+	int BitmapIterator::getNumberOfPadBytes() const
+	{
+		const auto remainder = (bitmapWidth * 3) % 4;
+		return (remainder == 0) ? 0 : (4 - remainder);
 	}
 
 	int BitmapIterator::getBitmapWidth() const
@@ -59,11 +64,6 @@ namespace BitmapGraphics
 	int BitmapIterator::getBitmapHeight() const
 	{
 		return bitmapHeight;
-	}
-	
-	/*int BitmapIterator::getNumberOfPadBytes() const
-	{		
-		return bitmap->getNumberOfPadBytes();
-	}*/
+	}	
 
 }

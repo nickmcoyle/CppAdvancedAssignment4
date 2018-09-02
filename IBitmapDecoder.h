@@ -17,8 +17,7 @@ namespace BitmapGraphics
 
 		virtual ~IBitmapDecoder() {};
 
-		virtual HBitmapDecoder clone(std::istream& sourceStream) = 0;
-		//virtual HBitmapIterator createIterator(std::istream& sourceStream) = 0;
+		virtual HBitmapDecoder clone(std::istream& sourceStream) = 0;		
 		virtual HBitmapIterator createIterator() = 0;
 		virtual std::string getMimeType() = 0;
 		virtual bool isSupported(std::string header) = 0;	

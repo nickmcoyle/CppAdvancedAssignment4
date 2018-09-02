@@ -39,8 +39,7 @@ namespace BitmapGraphics
 				
 		void read(std::istream& sourceStream);
 		void write(std::ostream& destinationStream) const;
-
-		//HBitmapIterator createIterator(std::istream& sourceStream);
+				
 		HBitmapIterator createIterator();
         
     private:

@@ -11,18 +11,18 @@
 
 using namespace BitmapGraphics;
 
-/*
+
 namespace
 {
     const std::string msBmp{"image/x-ms-bmp"};
     
-    std::shared_ptr<CodecLibrary> theCodecLibrary {};
+	std::shared_ptr<CodecLibrary> theCodecLibrary {};
 
     void setUp()
-    {		
-        //theCodecLibrary.reset(new CodecLibrary); //constructor is inaccesible because this is a singleton
-		theCodecLibrary.reset(CodecLibrary::getInstance);
-        theCodecLibrary->registerEncoder(HBitmapEncoder(new WindowsBitmapEncoder));
+    {	        
+        //theCodecLibrary.reset(new CodecLibrary);
+        //theCodecLibrary.reset(theCodecLibrary->getInstance());
+		theCodecLibrary->registerEncoder(HBitmapEncoder(new WindowsBitmapEncoder));
         theCodecLibrary->registerDecoder(HBitmapDecoder(new WindowsBitmapDecoder));
     }
 
@@ -44,7 +44,7 @@ TEST(invalidDecoder, CodecLibrary)
     catch (const std::exception& exc)
     {
         std::cout << exc.what() << std::endl;
-        CHECK(true);
+   //     CHECK(true);
     }
 }
 
@@ -55,7 +55,7 @@ TEST(invalidEncoder, CodecLibrary)
     try
     {
         std::ostringstream os{std::ios::binary};
-        encoder->encodeToStream(os);
+     //   encoder->encodeToStream(os);
     }
     catch (const std::exception& exc)
     {
@@ -240,4 +240,3 @@ TEST(doubleDecorator, CodecLibrary)
 
     tearDown();
 }
-*/

@@ -2,6 +2,9 @@
 
 namespace BitmapGraphics
 {
+
+	const std::string WindowsBitmapDecoder::mimeType = "image/x-ms-bmp";
+	
 	HBitmapDecoder WindowsBitmapDecoder::clone(std::istream& sourceStream)
 	{
 		return std::make_shared<WindowsBitmapDecoder>();
@@ -11,12 +14,7 @@ namespace BitmapGraphics
 	{
 		return HBitmap->createIterator();
 	}
-
-	/*HBitmapIterator WindowsBitmapDecoder::createIterator(std::istream& sourceStream)
-	{
-		return bitmap.createIterator(sourceStream);
-	}*/	
-
+	
 	std::string WindowsBitmapDecoder::getMimeType()
 	{
 		return mimeType;
@@ -30,10 +28,5 @@ namespace BitmapGraphics
 		}
 		return false;
 	}
-/*
-	const Binary::Byte& WindowsBitmapDecoder::getNextByte(std::stringstream ss)
-	{
-		return Binary::Byte(ss.get());
-	}
-*/
+
 }

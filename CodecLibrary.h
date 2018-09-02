@@ -9,26 +9,30 @@
 
 namespace BitmapGraphics
 {
-
 	class CodecLibrary
 	{
 	public:
 		static CodecLibrary& getInstance();
 
-	private:
+	private:		
+		using BitmapDecoderCollection = std::map<std::string, HBitmapDecoder>;	
 		using BitmapEncoderCollection = std::map<std::string, HBitmapEncoder>;
-		using BitmapDecoderCollection = std::map<std::string, HBitmapDecoder>;		
 
-		
-		CodecLibrary() = default; //private constructor prevents instantiation outside of this class
+		CodecLibrary() :
+		myDecoders(),
+		myEncoders()
+		{		
+		};
+
 		~CodecLibrary() = default;
-		
+
 		CodecLibrary(const CodecLibrary&) = delete; //prevent copy constructor
 		CodecLibrary& operator= (const CodecLibrary) = delete; //prevent copy assignment
 		CodecLibrary(CodecLibrary&&) = delete; //prevent move constructor
-		CodecLibrary& operator=(CodecLibrary&&) = delete; //prevent move assignment
+		CodecLibrary& operator=(CodecLibrary&&) = delete; //prevent move assignment		
 		
-	public:
+
+	public:		
 		void registerEncoder(HBitmapEncoder const& encoder);
 		void registerDecoder(HBitmapDecoder const& decoder);
 

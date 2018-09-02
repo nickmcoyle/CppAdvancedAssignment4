@@ -7,11 +7,15 @@
 
 namespace BitmapGraphics
 {
-
 	class GrayScaleConversionDecorator : public BitmapIteratorDecorator
 	{
 	public:
-		GrayScaleConversionDecorator() = default;		
+		GrayScaleConversionDecorator() = default;
+		GrayScaleConversionDecorator(const GrayScaleConversionDecorator&) = default;
+		GrayScaleConversionDecorator(GrayScaleConversionDecorator&&) = default;
+		GrayScaleConversionDecorator& operator=(const GrayScaleConversionDecorator&) = default;
+		GrayScaleConversionDecorator& operator=(GrayScaleConversionDecorator&&) = default;
+		~GrayScaleConversionDecorator() = default;
 
 		Color getColor() const {
 			Color const oldColor = originalIterator->getColor();

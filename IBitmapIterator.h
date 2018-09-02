@@ -11,6 +11,10 @@ namespace BitmapGraphics
 	class IBitmapIterator
 	{
 	public:
+		IBitmapIterator() = default;
+
+		virtual ~IBitmapIterator() {};
+
 		virtual void nextScanLine() = 0;
 		virtual bool isEndOfImage() const = 0;
 		virtual void nextPixel() = 0;

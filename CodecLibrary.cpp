@@ -5,18 +5,19 @@ namespace BitmapGraphics
 
 	CodecLibrary& CodecLibrary::getInstance()
 	{
-		static CodecLibrary codecLibrary; //use C++ 11 magic statics
-		return codecLibrary;
+		//static std::shared_ptr<CodecLibrary> instance = std::make_shared<CodecLibrary>(new CodecLibrary); //use C++ 11 magic statics
+		static CodecLibrary instance; //use C++ 11 magic statics
+		return instance;
 	}
 
 	void CodecLibrary::registerEncoder(HBitmapEncoder const& encoder)
-	{		
-		myEncoders.emplace(encoder->getMimeType(), encoder);
+	{			
+		myEncoders.insert({ encoder->getMimeType(), encoder });
 	}
 
 	void CodecLibrary::registerDecoder(HBitmapDecoder const& decoder)
 	{
-		myDecoders.emplace(decoder->getMimeType(), decoder);
+		myDecoders.insert({ decoder->getMimeType(), decoder });
 	}
 
 	HBitmapDecoder CodecLibrary::createDecoder(std::istream& sourceStream)

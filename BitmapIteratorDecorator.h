@@ -11,28 +11,36 @@ namespace BitmapGraphics
 		BitmapIteratorDecorator(HBitmapIterator const& originalIterator)
 			: originalIterator(originalIterator)
 		{
-		}
+		}		
 
-		void nextScanLine() {
+		virtual void nextScanLine() override
+		{
 			originalIterator->nextScanLine();
 		}
 
-		bool isEndOfImage() const {
+		virtual bool isEndOfImage() const override
+		{
 			return originalIterator->isEndOfImage();
 		}
 
-		void nextPixel() {
+		virtual void nextPixel() override
+		{
 			originalIterator->nextPixel();
 		}
 
-		bool isEndOfScanLine() const {
+		virtual bool isEndOfScanLine() const override
+		{
 			return originalIterator->isEndOfScanLine();
 		}
 
 		virtual Color getColor() const = 0;
 
-	protected:		
+		virtual int getBitmapWidth() const { return originalIterator->getBitmapWidth(); };
+		virtual int getBitmapHeight() const { return originalIterator->getBitmapHeight(); };
+		virtual int getNumberOfPadBytes() const { return originalIterator->getNumberOfPadBytes(); };
+
+	protected:			
+		HBitmapIterator originalIterator;	
 		using ColorComponent = ranged_number <int, 0, 255>;
-		HBitmapIterator originalIterator;				
 	};
 }
