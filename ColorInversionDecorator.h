@@ -16,9 +16,9 @@ namespace BitmapGraphics
 		Color getColor() const {
 			Color const oldColor = originalIterator->getColor();			
 
-			ColorComponent const red = Binary::Byte(255) - oldColor.getRed();
-			ColorComponent const green = Binary::Byte(255) - oldColor.getGreen();
-			ColorComponent const blue = Binary::Byte(255) - oldColor.getBlue();
+			ColorComponent const red = 255 - static_cast<int>(oldColor.getRed());
+			ColorComponent const green = 255 - static_cast<int>(oldColor.getGreen());
+			ColorComponent const blue = 255 - static_cast<int>(oldColor.getBlue());
 			
 			Color(red.getByte(), green.getByte(), blue.getByte());			
 		}	

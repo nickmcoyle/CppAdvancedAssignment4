@@ -11,6 +11,7 @@
 
 using namespace BitmapGraphics;
 
+/*
 namespace
 {
     const std::string msBmp{"image/x-ms-bmp"};
@@ -239,3 +240,4 @@ TEST(doubleDecorator, CodecLibrary)
 
     tearDown();
 }
+*/

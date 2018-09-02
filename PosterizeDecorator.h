@@ -13,7 +13,7 @@ namespace BitmapGraphics
 	public:
 		PosterizeDecorator() = default;
 
-		const Binary::Byte& posterizeColor(const Binary::Byte& color) const
+		const Binary::Byte& posterizeColor(const int& color) const
 		{
 			if (color < 64)
 			{
@@ -34,15 +34,15 @@ namespace BitmapGraphics
 			{
 				return Binary::Byte(223);
 			}
-			return color;
+			return static_cast<Binary::Byte>(color);
 		}
 
 		Color getColor() const {
 			Color const oldColor = originalIterator->getColor();
 			
-			Binary::Byte const red = posterizeColor(oldColor.getRed());
-			Binary::Byte const green = posterizeColor(oldColor.getGreen());
-			Binary::Byte const blue = posterizeColor(oldColor.getBlue());			
+			Binary::Byte const red = posterizeColor(static_cast<int>(oldColor.getRed()));
+			Binary::Byte const green = posterizeColor(static_cast<int>(oldColor.getGreen()));
+			Binary::Byte const blue = posterizeColor(static_cast<int>(oldColor.getBlue()));			
 
 			return Color(red, green, blue);
 		}	

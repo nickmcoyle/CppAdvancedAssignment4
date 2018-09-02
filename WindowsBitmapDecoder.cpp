@@ -2,46 +2,20 @@
 
 namespace BitmapGraphics
 {
-	
-	WindowsBitmapDecoder::WindowsBitmapDecoder()
-		:myBitmap(Bitmap(0,0)),
-		myDecoder(this)
-	{
-		CodecLibrary::getInstance().registerDecoder(myDecoder);
-	}
-
-	WindowsBitmapDecoder::WindowsBitmapDecoder(const Bitmap& bitmap)
-		:myBitmap(bitmap),
-		myDecoder(this)
-	{		
-		CodecLibrary::getInstance().registerDecoder(myDecoder);
-	}
-
-	WindowsBitmapDecoder::~WindowsBitmapDecoder()
-	{
-	}
-
-	HBitmapDecoder WindowsBitmapDecoder::clone(std::string const& firstChunk, std::istream& sourceStream)
-	{				
-		myDecoder = CodecLibrary::getInstance().createDecoder(sourceStream);
-		return myDecoder;
-	}
-
 	HBitmapDecoder WindowsBitmapDecoder::clone(std::istream& sourceStream)
 	{
-		myDecoder = CodecLibrary::getInstance().createDecoder(sourceStream);
-		return myDecoder;
+		return std::make_shared<WindowsBitmapDecoder>();
 	}
 
 	HBitmapIterator WindowsBitmapDecoder::createIterator()
 	{
-		return myBitmap.createIterator();
+		return HBitmap->createIterator();
 	}
 
-	HBitmapIterator WindowsBitmapDecoder::createIterator(std::istream& sourceStream)
+	/*HBitmapIterator WindowsBitmapDecoder::createIterator(std::istream& sourceStream)
 	{
-		return myBitmap.createIterator(sourceStream);
-	}	
+		return bitmap.createIterator(sourceStream);
+	}*/	
 
 	std::string WindowsBitmapDecoder::getMimeType()
 	{
@@ -56,10 +30,10 @@ namespace BitmapGraphics
 		}
 		return false;
 	}
-
+/*
 	const Binary::Byte& WindowsBitmapDecoder::getNextByte(std::stringstream ss)
 	{
 		return Binary::Byte(ss.get());
 	}
-
+*/
 }

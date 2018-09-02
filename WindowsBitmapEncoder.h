@@ -11,9 +11,7 @@
 #include <memory>
 
 namespace BitmapGraphics
-{	
-	using HBitmapEncoder = std::shared_ptr<IBitmapEncoder>;
-
+{
 	class WindowsBitmapEncoder : public IBitmapEncoder
 	{
 	public:
@@ -27,7 +25,7 @@ namespace BitmapGraphics
 
 		~WindowsBitmapEncoder();
 
-		HBitmapEncoder clone(HBitmapIterator& bitmapIterator);
+		HBitmapEncoder clone(const HBitmapIterator& bitmapIterator);
 		std::ostream& encodeToStream(HBitmapIterator& bitmapIter); //encoder is created with an iterator and produces/encodes to a stream
 		void encodeToStream(const std::ofstream& stream);		
 		std::string getMimeType();

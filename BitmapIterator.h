@@ -1,19 +1,16 @@
 #pragma once
 
 #include "IBitmapIterator.h"
+#include "Bitmap.h"
 #include "Color.h"
-#include <memory>
 
 namespace BitmapGraphics
-{	
-	using HBitmapIterator = std::shared_ptr<IBitmapIterator>;	
-	using PixelIterator = Bitmap::ScanLine::const_iterator;	
-	
+{
 	class BitmapIterator : public IBitmapIterator
 	{	
 	public:
 		BitmapIterator() = default;
-		BitmapIterator(Bitmap& myBitmap);	
+		BitmapIterator(Bitmap& bitmap);	
 
 		BitmapIterator(const BitmapIterator& other) = default;
 		BitmapIterator(BitmapIterator&& other) = default;
@@ -32,11 +29,15 @@ namespace BitmapGraphics
 		int getBitmapWidth() const;
 		int getBitmapHeight() const;	
 
-		int getNumberOfPadBytes() const;
+	//	int getNumberOfPadBytes() const;
 		
 	private:		
-		Bitmap& myBitmap;
-		Bitmap::ScanLineIterator scanLineCollectionIterator;
-		PixelIterator pixelIterator;		
+		int bitmapWidth;
+		int bitmapHeight;
+
+		Bitmap::ScanLineIterator scanLineIterator;
+		Bitmap::ScanLineIterator scanLineEnd;
+		Bitmap::ScanLine::const_iterator colorIterator;
+
 	};	
 }

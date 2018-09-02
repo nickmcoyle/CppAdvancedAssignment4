@@ -60,11 +60,11 @@ namespace BitmapGraphics
             }
         }
     }
-
+/*
 	HBitmapIterator Bitmap::createIterator(std::istream& sourceStream)
 	{
 		return HBitmapIterator();
-	}
+	}*/
 
 	HBitmapIterator Bitmap::createIterator()
 	{

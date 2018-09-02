@@ -21,9 +21,16 @@ namespace BitmapGraphics
 
 	HBitmapDecoder CodecLibrary::createDecoder(std::istream& sourceStream)
 	{
-		//take first 100 bytes and determine the correct decoder to return		
-		std::string header(std::istreambuf_iterator<char>(sourceStream), {});
-		sourceStream.seekg;
+		//take first 100 bytes and determine the correct decoder to return
+		std::istream_iterator<std::string> iter(sourceStream);
+		std::string header;
+		for (int i = 0; i < 100; ++i)
+		{
+			header += *iter++;
+		}
+
+		//std::string header(std::istreambuf_iterator<char>(sourceStream), {});
+		sourceStream.seekg(std::ios_base::beg);
 				
 		//lookup decoder from the collection and return handle to it?
 		for (const auto& decoder : myDecoders)
@@ -38,9 +45,16 @@ namespace BitmapGraphics
 
 	HBitmapDecoder CodecLibrary::createDecoder(std::string const& mimeType, std::istream& sourceStream)
 	{
-		//take first 100 bytes and determine the correct decoder to return		
-		std::string header(std::istreambuf_iterator<char>(sourceStream), {});
-		sourceStream.seekg;
+		//take first 100 bytes and determine the correct decoder to return
+		std::istream_iterator<std::string> iter(sourceStream);
+		std::string header;
+		for (int i = 0; i < 100; ++i)
+		{
+			header += *iter++;
+		}
+
+		//std::string header(std::istreambuf_iterator<char>(sourceStream), {});
+		sourceStream.seekg(std::ios_base::beg);
 
 		if (!myDecoders[mimeType]->isSupported(header))
 		{		

@@ -1,10 +1,8 @@
 #pragma once
 
 #include "Color.h"
-#include "BitmapIterator.h"
-#include "CodecLibrary.h"
+#include "IBitmapIterator.h"
 #include <list>
-#include <memory>
 
 namespace BitmapGraphics
 {	
@@ -42,7 +40,7 @@ namespace BitmapGraphics
 		void read(std::istream& sourceStream);
 		void write(std::ostream& destinationStream) const;
 
-		HBitmapIterator createIterator(std::istream& sourceStream);
+		//HBitmapIterator createIterator(std::istream& sourceStream);
 		HBitmapIterator createIterator();
         
     private:

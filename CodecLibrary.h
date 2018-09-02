@@ -1,7 +1,7 @@
 #pragma once
 
-#include "WindowsBitmapEncoder.h"
-#include "WindowsBitmapDecoder.h"
+#include "IBitmapEncoder.h"
+#include "IBitmapDecoder.h"
 #include "BitmapIterator.h"
 #include "Bitmap.h"
 #include <map>
@@ -9,6 +9,7 @@
 
 namespace BitmapGraphics
 {
+
 	class CodecLibrary
 	{
 	public:

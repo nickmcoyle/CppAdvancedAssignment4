@@ -1,163 +1,29 @@
-﻿  Bitmap.cpp
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(11): error C2653: 'Bitmap': is not a class or namespace name
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(11): error C2061: syntax error: identifier 'const_iterator'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(17): error C2061: syntax error: identifier 'Bitmap'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(17): error C2535: 'BitmapGraphics::BitmapIterator::BitmapIterator(void)': member function already defined or declared
-  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(16): note: see declaration of 'BitmapGraphics::BitmapIterator::BitmapIterator'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(39): error C2143: syntax error: missing ';' before '&'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(39): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(39): error C2238: unexpected token(s) preceding ';'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(40): error C2653: 'Bitmap': is not a class or namespace name
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(40): error C3646: 'scanLineCollectionIterator': unknown override specifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(40): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(41): error C3646: 'pixelIterator': unknown override specifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C3646: 'clone': unknown override specifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2065: 'bitmapIterator': undeclared identifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2275: 'BitmapGraphics::HBitmapIterator': illegal use of this type as an expression
-  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(9): note: see declaration of 'BitmapGraphics::HBitmapIterator'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2096: 'HBitmapEncoder': A data member cannot be initialized with a parenthesized initializer
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2433: 'BitmapGraphics::IBitmapEncoder::HBitmapEncoder': 'virtual' not permitted on data declarations
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): fatal error C1903: unable to recover from previous error(s); stopping compilation
-  BitmapEncodeDecodeTests.cpp
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(11): error C2653: 'Bitmap': is not a class or namespace name
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(11): error C2061: syntax error: identifier 'const_iterator'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(17): error C2061: syntax error: identifier 'Bitmap'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(17): error C2535: 'BitmapGraphics::BitmapIterator::BitmapIterator(void)': member function already defined or declared
-  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(16): note: see declaration of 'BitmapGraphics::BitmapIterator::BitmapIterator'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(39): error C2143: syntax error: missing ';' before '&'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(39): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(39): error C2238: unexpected token(s) preceding ';'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(40): error C2653: 'Bitmap': is not a class or namespace name
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(40): error C3646: 'scanLineCollectionIterator': unknown override specifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(40): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(41): error C3646: 'pixelIterator': unknown override specifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C3646: 'clone': unknown override specifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2065: 'bitmapIterator': undeclared identifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2275: 'BitmapGraphics::HBitmapIterator': illegal use of this type as an expression
-  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(9): note: see declaration of 'BitmapGraphics::HBitmapIterator'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2096: 'HBitmapEncoder': A data member cannot be initialized with a parenthesized initializer
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2433: 'BitmapGraphics::IBitmapEncoder::HBitmapEncoder': 'virtual' not permitted on data declarations
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): fatal error C1903: unable to recover from previous error(s); stopping compilation
-  BitmapIterator.cpp
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapiterator.h(17): error C3646: 'getColor': unknown override specifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapiterator.h(17): error C2059: syntax error: ')'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapiterator.h(17): error C2238: unexpected token(s) preceding ';'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(11): error C2653: 'Bitmap': is not a class or namespace name
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(11): error C2061: syntax error: identifier 'const_iterator'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(17): error C2061: syntax error: identifier 'Bitmap'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(17): error C2535: 'BitmapGraphics::BitmapIterator::BitmapIterator(void)': member function already defined or declared
-  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(16): note: see declaration of 'BitmapGraphics::BitmapIterator::BitmapIterator'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(39): error C2143: syntax error: missing ';' before '&'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(39): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(39): error C2238: unexpected token(s) preceding ';'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(40): error C2653: 'Bitmap': is not a class or namespace name
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(40): error C3646: 'scanLineCollectionIterator': unknown override specifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(40): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(41): error C3646: 'pixelIterator': unknown override specifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(6): error C2065: 'Bitmap': undeclared identifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(6): error C2065: 'myBitmap': undeclared identifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(6): error C2761: '{ctor}': redeclaration of member is not allowed
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(6): error C2448: 'BitmapGraphics::BitmapIterator::{ctor}': function-style initializer appears to be a function definition
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(6): error C2059: syntax error: ':'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(7): error C2065: 'myBitmap': undeclared identifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(8): error C2228: left of '.begin' must have class/struct/union
-  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(8): note: type is 'int'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(9): error C2100: illegal indirection
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(9): error C2228: left of '.cbegin' must have class/struct/union
-  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(9): note: type is 'int'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(10): error C2448: 'BitmapGraphics::pixelIterator': function-style initializer appears to be a function definition
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(17): error C2100: illegal indirection
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(17): error C2228: left of '.cbegin' must have class/struct/union
-  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(17): note: type is 'int'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(22): error C2228: left of '.end' must have class/struct/union
-  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(22): note: type is 'int'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(36): error C2100: illegal indirection
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(36): error C2228: left of '.cend' must have class/struct/union
-  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(36): note: type is 'int'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(45): error C3867: 'BitmapGraphics::BitmapIterator::isEndOfImage': non-standard syntax; use '&' to create a pointer to member
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(49): error C2100: illegal indirection
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(54): error C2228: left of '.getWidth' must have class/struct/union
-  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(54): note: type is 'int'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(59): error C2228: left of '.getHeight' must have class/struct/union
-  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(59): note: type is 'int'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(64): error C2228: left of '.getNumberOfPadBytes' must have class/struct/union
-  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.cpp(64): note: type is 'int'
-  CodecLibrary.cpp
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C3646: 'clone': unknown override specifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2065: 'HBitmapIterator': undeclared identifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2065: 'bitmapIterator': undeclared identifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2096: 'HBitmapEncoder': A data member cannot be initialized with a parenthesized initializer
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2433: 'BitmapGraphics::IBitmapEncoder::HBitmapEncoder': 'virtual' not permitted on data declarations
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): fatal error C1903: unable to recover from previous error(s); stopping compilation
-  CodecLibraryTest.cpp
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C3646: 'clone': unknown override specifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2065: 'HBitmapIterator': undeclared identifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2065: 'bitmapIterator': undeclared identifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2096: 'HBitmapEncoder': A data member cannot be initialized with a parenthesized initializer
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2433: 'BitmapGraphics::IBitmapEncoder::HBitmapEncoder': 'virtual' not permitted on data declarations
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): fatal error C1903: unable to recover from previous error(s); stopping compilation
-  MyBitmapEncodeDecodeTests.cpp
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(11): error C2653: 'Bitmap': is not a class or namespace name
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(11): error C2061: syntax error: identifier 'const_iterator'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(17): error C2061: syntax error: identifier 'Bitmap'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(17): error C2535: 'BitmapGraphics::BitmapIterator::BitmapIterator(void)': member function already defined or declared
-  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(16): note: see declaration of 'BitmapGraphics::BitmapIterator::BitmapIterator'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(39): error C2143: syntax error: missing ';' before '&'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(39): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(39): error C2238: unexpected token(s) preceding ';'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(40): error C2653: 'Bitmap': is not a class or namespace name
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(40): error C3646: 'scanLineCollectionIterator': unknown override specifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(40): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(41): error C3646: 'pixelIterator': unknown override specifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C3646: 'clone': unknown override specifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2065: 'bitmapIterator': undeclared identifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2275: 'BitmapGraphics::HBitmapIterator': illegal use of this type as an expression
-  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmapiterator.h(9): note: see declaration of 'BitmapGraphics::HBitmapIterator'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2096: 'HBitmapEncoder': A data member cannot be initialized with a parenthesized initializer
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2433: 'BitmapGraphics::IBitmapEncoder::HBitmapEncoder': 'virtual' not permitted on data declarations
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): fatal error C1903: unable to recover from previous error(s); stopping compilation
-  Myranged_numberTest.cpp
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\myranged_numbertest.cpp(11): warning C4305: 'argument': truncation from 'int' to 'uint8_t'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\myranged_numbertest.cpp(11): warning C4309: 'argument': truncation of constant value
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\myranged_numbertest.cpp(29): error C2397: conversion from 'double' to 'long' requires a narrowing conversion
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\myranged_numbertest.cpp(29): error C2397: conversion from 'double' to 'const long' requires a narrowing conversion
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\myranged_numbertest.cpp(31): error C2397: conversion from 'double' to 'long' requires a narrowing conversion
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\myranged_numbertest.cpp(31): error C2397: conversion from 'double' to 'const long' requires a narrowing conversion
-  ranged_numberTest.cpp
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(42): error C2676: binary '++': 'ranged_number<short,1,12>' does not define this operator or a conversion to a type acceptable to the predefined operator
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_numbertest.cpp(64): error C2676: binary '--': 'ranged_number<short,1,12>' does not define this operator or a conversion to a type acceptable to the predefined operator
-  WindowsBitmapDecoder.cpp
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C3646: 'clone': unknown override specifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2065: 'HBitmapIterator': undeclared identifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2065: 'bitmapIterator': undeclared identifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2096: 'HBitmapEncoder': A data member cannot be initialized with a parenthesized initializer
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C2433: 'BitmapGraphics::IBitmapEncoder::HBitmapEncoder': 'virtual' not permitted on data declarations
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapencoder.h(16): fatal error C1903: unable to recover from previous error(s); stopping compilation
-  WindowsBitmapEncoder.cpp
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapdecoder.h(17): error C3646: 'clone': unknown override specifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapdecoder.h(17): error C2275: 'std::string': illegal use of this type as an expression
-  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapdecoder.h(17): note: see declaration of 'std::string'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapdecoder.h(17): error C2059: syntax error: 'const'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapdecoder.h(17): error C2238: unexpected token(s) preceding ';'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapdecoder.h(18): error C3646: 'createIterator': unknown override specifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapdecoder.h(18): error C2065: 'sourceStream': undeclared identifier
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapdecoder.h(18): error C2275: 'std::istream': illegal use of this type as an expression
-  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapdecoder.h(18): note: see declaration of 'std::istream'
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapdecoder.h(18): error C2096: 'HBitmapIterator': A data member cannot be initialized with a parenthesized initializer
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapdecoder.h(18): error C2433: 'BitmapGraphics::IBitmapDecoder::HBitmapIterator': 'virtual' not permitted on data declarations
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapdecoder.h(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapdecoder.h(18): fatal error C1903: unable to recover from previous error(s); stopping compilation
-  Generating Code...
+﻿  CodecLibraryTest.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xutility(1108): error C2064: term does not evaluate to a function taking 2 arguments
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xutility(1107): note: see reference to function template instantiation 'bool std::_Debug_lt_pred<_Pr&,const _Ty&,const _Ty&>(int&,_Ty1,_Ty2) noexcept(<expr>)' being compiled
+          with
+          [
+              _Pr=int,
+              _Ty=int,
+              _Ty1=const int &,
+              _Ty2=const int &
+          ]
+  c:\users\nick\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_number.h(15): note: see reference to function template instantiation 'const _Ty &std::clamp<Number,int>(const _Ty &,const _Ty &,const _Ty &,_Pr)' being compiled
+          with
+          [
+              _Ty=int,
+              Number=int,
+              _Pr=int
+          ]
+  c:\users\nick\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_number.h(14): note: while compiling class template member function 'ranged_number<int,0,255>::ranged_number(Number)'
+          with
+          [
+              Number=int
+          ]
+  c:\users\nick\documents\education\c++uw\uw c++\c++ advanced\assignment4\brightnessdecorator.h(30): note: see reference to function template instantiation 'ranged_number<int,0,255>::ranged_number(Number)' being compiled
+          with
+          [
+              Number=int
+          ]
+  c:\users\nick\documents\education\c++uw\uw c++\c++ advanced\assignment4\brightnessdecorator.h(30): note: see reference to class template instantiation 'ranged_number<int,0,255>' being compiled
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xutility(1108): error C2056: illegal expression

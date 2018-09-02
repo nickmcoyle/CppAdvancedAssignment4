@@ -1,6 +1,7 @@
 #pragma once
 
 #include "IBitmapIterator.h"
+#include "ranged_number.h"
 
 namespace BitmapGraphics
 {
