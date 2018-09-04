@@ -7,14 +7,22 @@ namespace BitmapGraphics
 {
 	class BitmapIteratorDecorator : public IBitmapIterator
 	{
+
 	public:
-		BitmapIteratorDecorator(HBitmapIterator const& originalIterator)
-			: originalIterator(originalIterator)
+		BitmapIteratorDecorator() = default;
+		BitmapIteratorDecorator(const BitmapIteratorDecorator&) = default;
+		BitmapIteratorDecorator(BitmapIteratorDecorator&&) = default;
+		BitmapIteratorDecorator& operator=(const BitmapIteratorDecorator&) = default;
+		BitmapIteratorDecorator& operator=(BitmapIteratorDecorator&&) = default;
+		~BitmapIteratorDecorator() = default;
+		
+		BitmapIteratorDecorator(HBitmapIterator const& originalIterator) :
+			originalIterator(originalIterator)
 		{
 		}		
 
 		virtual void nextScanLine() override
-		{
+		{			
 			originalIterator->nextScanLine();
 		}
 
@@ -33,14 +41,33 @@ namespace BitmapGraphics
 			return originalIterator->isEndOfScanLine();
 		}
 
-		virtual Color getColor() const = 0;
+		virtual Color getColor() const override
+		{
+			return originalIterator->getColor();
+		}
 
-		virtual int getBitmapWidth() const { return originalIterator->getBitmapWidth(); };
-		virtual int getBitmapHeight() const { return originalIterator->getBitmapHeight(); };
-		virtual int getNumberOfPadBytes() const { return originalIterator->getNumberOfPadBytes(); };
+		virtual void setColor(const Color& color) override
+		{
+			originalIterator-> setColor(color);
+		}
+
+		virtual int getBitmapWidth() const override
+		{
+			return originalIterator->getBitmapWidth(); 
+		};
+
+		virtual int getBitmapHeight() const override
+		{ 
+			return originalIterator->getBitmapHeight(); 
+		};
+		
+		virtual int getNumberOfPadBytes() const override
+		{
+			return originalIterator->getNumberOfPadBytes(); 
+		};
 
 	protected:			
-		HBitmapIterator originalIterator;	
+		HBitmapIterator originalIterator;
 		using ColorComponent = ranged_number <int, 0, 255>;
 	};
 }

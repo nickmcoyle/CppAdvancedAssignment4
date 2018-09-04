@@ -1,2 +1,26 @@
-﻿  CodecLibraryTest.cpp
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(24): error C2660: 'std::shared_ptr<BitmapGraphics::CodecLibrary>::reset': function does not take 1 arguments
+﻿  Bitmap.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\memory(1856): error C2259: 'BitmapGraphics::BitmapIterator': cannot instantiate abstract class
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\memory(1856): note: due to following members:
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\memory(1856): note: 'void BitmapGraphics::IBitmapIterator::setColor(const BitmapGraphics::Color &)': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ibitmapiterator.h(24): note: see declaration of 'BitmapGraphics::IBitmapIterator::setColor'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\memory(1922): note: see reference to function template instantiation 'std::_Ref_count_obj<_Ty>::_Ref_count_obj<BitmapGraphics::Bitmap&>(BitmapGraphics::Bitmap &)' being compiled
+          with
+          [
+              _Ty=BitmapGraphics::BitmapIterator
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\memory(1923): note: see reference to function template instantiation 'std::_Ref_count_obj<_Ty>::_Ref_count_obj<BitmapGraphics::Bitmap&>(BitmapGraphics::Bitmap &)' being compiled
+          with
+          [
+              _Ty=BitmapGraphics::BitmapIterator
+          ]
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\bitmap.cpp(72): note: see reference to function template instantiation 'std::shared_ptr<BitmapGraphics::BitmapIterator> std::make_shared<BitmapGraphics::BitmapIterator,BitmapGraphics::Bitmap&>(BitmapGraphics::Bitmap &)' being compiled
+  CodecLibraryTest.cpp
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\test.h(168): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\codeclibrarytest.cpp(138): note: see reference to function template instantiation 'void check_equal_compare<int,bool>(T,U,TestResult &,const char *,int)' being compiled
+          with
+          [
+              T=int,
+              U=bool
+          ]
+  Generating Code...
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment4\ranged_number.h(29): warning C4172: returning address of local variable or temporary

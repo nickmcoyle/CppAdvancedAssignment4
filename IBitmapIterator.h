@@ -6,7 +6,7 @@
 namespace BitmapGraphics
 {
 	class IBitmapIterator;
-	using HBitmapIterator = std::shared_ptr<IBitmapIterator>;
+	using HBitmapIterator = std::shared_ptr<IBitmapIterator>;	
 
 	class IBitmapIterator
 	{
@@ -21,6 +21,7 @@ namespace BitmapGraphics
 		virtual bool isEndOfScanLine() const = 0;
 
 		virtual Color getColor() const = 0;
+		virtual void setColor(const Color& color) = 0;
 
 		virtual int getBitmapWidth() const = 0;
 		virtual int getBitmapHeight() const = 0;

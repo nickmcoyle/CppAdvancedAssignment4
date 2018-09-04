@@ -17,8 +17,8 @@ namespace BitmapGraphics
 		BrightnessDecorator& operator=(BrightnessDecorator&&) = default;
 		~BrightnessDecorator() = default;
 
-		BrightnessDecorator(HBitmapIterator iterator, int brightnessAdjustment) :
-		BitmapIteratorDecorator(iterator),
+		BrightnessDecorator(const HBitmapIterator& iterator, int brightnessAdjustment) :
+		originalIterator(iterator),
 		brightnessAdjustment(brightnessAdjustment)
 		{
 		};
@@ -38,8 +38,8 @@ namespace BitmapGraphics
 		};
 
 		virtual Color getColor() const override 
-		{
-			Color const oldColor = originalIterator->getColor();
+		{			
+			Color const oldColor =  originalIterator->getColor();
 			
 			ColorComponent const red = static_cast<int>(oldColor.getRed()) + brightnessAdjustment;
 			ColorComponent const green = static_cast<int>(oldColor.getGreen()) + brightnessAdjustment;
@@ -49,6 +49,7 @@ namespace BitmapGraphics
 		};
 				
 	private:		
+		HBitmapIterator originalIterator;
 		int brightnessAdjustment;
 	};
 }
